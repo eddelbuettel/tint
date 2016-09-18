@@ -1,0 +1,12 @@
+Package: tint
+Type: Package
+Title: Tint Is Not Tufte
+Version: 0.0.1
+Date: 2016-09-10
+Author: Dirk Eddelbuettel
+Maintainer: Dirk Eddelbuettel <edd@debian.org>
+Description: A Tufte-alike html style for rmarkdown.
+URL: http://dirk.eddelbuettel.com/code/tint.html
+BugReports: https://github.com/eddelbuettel/tint/issues
+License: GPL (>= 2)
+RoxygenNote: 5.0.1
