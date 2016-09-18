@@ -18,10 +18,13 @@
 tint <- function(...) {
 
   html_document2 = function(..., extra_dependencies = list()) {
+    headerfile <- system.file("rmarkdown/templates/tint/resources/header.html", package = "tint")
+    cssfile <- system.file("rmarkdown/templates/tint/resources/tint.css", package = "tint")
     rmarkdown::html_document(
-        ...,
-        extra_dependencies = c(extra_dependencies), #, tufte_html_dependency())
-        css = system.file("rmarkdown/templates/tint/resources/tint.css", package = "tint")
+      ...,
+      extra_dependencies = c(extra_dependencies), #, tufte_html_dependency())
+      includes = rmarkdown::includes(in_header = headerfile),
+      css = cssfile
     )
   }
   format = html_document2(theme = NULL, ...)

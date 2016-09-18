@@ -7,18 +7,21 @@
 
 @font-face {
   font-family: "Roboto";
-  src: url("https://fonts.googleapis.com/css?family=Roboto");
-  font-weight: 400; }
+  src: url("https://fonts.googleapis.com/css?family=Roboto") format("truetype");
+  font-weight: 400;
+}
 
 @font-face {
   font-family: "Roboto Mono";
-  src: url("https://fonts.googleapis.com/css?family=Roboto+Mono");
-  font-weight: 400; }
+  src: url("https://fonts.googleapis.com/css?family=Roboto+Mono") format("truetype");
+  font-weight: 400;
+}
 
 @font-face {
   font-family: "Roboto Condensed";
-  src: url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
-  font-weight: 400; }
+  src: url("https://fonts.googleapis.com/css?family=Roboto+Condensed") format("truetype");
+  font-weight: 400;
+}
 
 /* Tufte CSS styles */
 html { font-size: 15px; }
