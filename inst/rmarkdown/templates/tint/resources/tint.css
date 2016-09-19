@@ -43,31 +43,40 @@ h1.title { font-weight: 400;
      font-size: 3.2rem;
      line-height: 1; }
 
-h1 { font-style: italic;
-     font-weight: 400;
+h1 { font-style: normal;
+     font-weight: 500;
      margin-top: 2.1rem;
      margin-bottom: 0;
      font-size: 2.2rem;
      line-height: 1; }
 
-h2 { font-style: italic;
-     font-weight: 400;
+h2 { font-style: normal;
+     font-weight: 300;
      font-size: 1.7rem;
      margin-top: 2rem;
      margin-bottom: 0;
      line-height: 1; }
 
-h3.subtitle { font-style: italic;
-             font-weight: 400;
+h3.subtitle { font-style: normal;
+             font-weight: 200;
              margin-top: 1rem;
              margin-bottom: 1rem;
              font-size: 1.8rem;
              display: block;
              line-height: 1; }
 
+h4 { font-style: normal;
+     font-weight: 200;
+     font-size: 1.4rem;
+     margin-top: 1.5rem;
+     margin-bottom: 0;
+     line-height: 1; 
+}
+
 h4.author, h4.date {
+    font-style: normal;
     font-size: 1.4rem;
-    font-weight: 400;
+    font-weight: 200;
     margin: 1rem auto;
     line-height: 1;
 }
