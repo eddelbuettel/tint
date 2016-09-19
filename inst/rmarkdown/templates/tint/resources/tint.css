@@ -74,9 +74,8 @@ h4 { font-style: normal;
 }
 
 h4.author, h4.date {
-    font-style: normal;
     font-size: 1.4rem;
-    font-weight: 200;
+    font-weight: 400;
     margin: 1rem auto;
     line-height: 1;
 }
