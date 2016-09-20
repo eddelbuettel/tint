@@ -108,6 +108,12 @@ tint <- function(...) {
       }
       z
     })
+
+    # remove <em> tags from subtitle, author, date
+    x <- gsub("^(<h3 class=\"subtitle\">)<em>(.*)</em>(</h3>)$", "\\1\\2\\3",  x)
+    x <- gsub("^(<h4 class=\"author\">)<em>(.*)</em>(</h4>)$", "\\1\\2\\3",  x)
+    x <- gsub("^(<h4 class=\"date\">)<em>(.*)</em>(</h4>)$", "\\1\\2\\3",  x)
+      
     writeUTF8(x, output)
     output
   }
