@@ -58,7 +58,7 @@ h2 { font-style: normal;
      line-height: 1; }
 
 h3.subtitle { font-style: normal;
-             font-weight: 200;
+             font-weight: 300;
              margin-top: 1rem;
              margin-bottom: 1rem;
              font-size: 1.8rem;
@@ -75,7 +75,7 @@ h4 { font-style: normal;
 
 h4.author, h4.date {
     font-size: 1.4rem;
-    font-weight: 400;
+    font-weight: 200;
     margin: 1rem auto;
     line-height: 1;
 }
