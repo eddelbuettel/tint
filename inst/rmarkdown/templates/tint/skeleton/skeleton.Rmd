@@ -1,7 +1,7 @@
 ---
 title: "Tint Is Not Tufte"
 subtitle: "An implementation in R Markdown"
-author: "JJ Allaire and Yihui Xie and Dirk Eddelbuettel"
+author: "JJ Allaire, Yihui Xie, Dirk Eddelbuettel"
 date: "`r Sys.Date()`"
 output:
   tint::tint: 
@@ -17,13 +17,27 @@ knitr::opts_chunk$set(tidy = FALSE, cache.extra = packageVersion('tint'))
 options(htmltools.dir.version = FALSE)
 ```
 
+# Before We Get Started...
+
+```{r fig-nocap-margin-first, fig.margin=TRUE, fig.width=4, fig.height=4, cache=TRUE, echo=FALSE}
+ggplot(mtcars, aes(wt, mpg)) + geom_point(size=3, aes(colour=factor(cyl))) + theme(legend.position="none"
+```
+
+_[tint](http://github.com/eddelbuettel/tint) is straightforward mix of the (html part of the) excellent
+[tufte](https://github.com/rstudio/tufte) package by JJ and Yihui, mixed with the
+[Roboto](https://fonts.google.com/specimen/Roboto) font use and color scheme
+proposed by [envisioned css](http://nogginfuel.com/envisioned-css/) plus minor style changes 
+such as removal of _italics_---but otherwise true to the wonderful
+[tufte](https://github.com/rstudio/tufte) package for R---all baked together into a
+small package providing another template. 
+
+The package name is a standard package naming recursion: _tint is not tufte_.
+
+The remainder of the [tufte](https://github.com/rstudio/tufte) skeleton document follows as is.
+
 # Introduction
 
 The Tufte handout style is a style that Edward Tufte uses in his books and handouts. Tufte's style is known for its extensive use of sidenotes, tight integration of graphics with text, and well-set typography. This style has been implemented in LaTeX and HTML/CSS^[See Github repositories [tufte-latex](https://github.com/tufte-latex/tufte-latex) and [tufte-css](https://github.com/edwardtufte/tufte-css)], respectively. We have ported both implementations into the [**tufte** package](https://github.com/rstudio/tufte). If you want LaTeX/PDF output, you may use the `tufte_handout` format for handouts, and `tufte_book` for books. For HTML output, use `tufte_html`. These formats can be either specified in the YAML metadata at the beginning of an R Markdown document (see an example below), or passed to the `rmarkdown::render()` function. See @R-rmarkdown more information about **rmarkdown**.
-
-This variant uses the color scheme and [Roboto](https://fonts.google.com/specimen/Roboto)
-fonts proposed by [envisioned css](http://nogginfuel.com/envisioned-css/) but remains
-otherwise true to the [tufte](https://github.com/rstudio/tufte) package for R.
 
 ```yaml
 ---
