@@ -20,7 +20,8 @@ options(htmltools.dir.version = FALSE)
 # Before We Get Started...
 
 ```{r fig-nocap-margin-first, fig.margin=TRUE, fig.width=4, fig.height=4, cache=TRUE, echo=FALSE}
-ggplot(mtcars, aes(wt, mpg)) + geom_point(size=3, aes(colour=factor(cyl))) + theme(legend.position="none"
+library(ggplot2)
+ggplot(mtcars, aes(wt, mpg)) + geom_point(size=3, aes(colour=factor(cyl))) + theme(legend.position="none")
 ```
 
 _[tint](http://github.com/eddelbuettel/tint) is straightforward mix of the (html part of the) excellent
