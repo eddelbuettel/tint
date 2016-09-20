@@ -24,7 +24,7 @@ library(ggplot2)
 ggplot(mtcars, aes(wt, mpg)) + geom_point(size=3, aes(colour=factor(cyl))) + theme(legend.position="none")
 ```
 
-_[tint](http://github.com/eddelbuettel/tint) is straightforward mix of the (html part of the) excellent
+[tint](http://github.com/eddelbuettel/tint) is straightforward mix of the (html part of the) excellent
 [tufte](https://github.com/rstudio/tufte) package by JJ and Yihui, mixed with the
 [Roboto](https://fonts.google.com/specimen/Roboto) font use and color scheme
 proposed by [envisioned css](http://nogginfuel.com/envisioned-css/) plus minor style changes 
