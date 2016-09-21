@@ -226,7 +226,7 @@ To see the R Markdown source of this example document, you may follow [this link
 ```{r eval=FALSE}
 file.edit(
   tufte:::template_resources(
-    'tufte_html', '..', 'skeleton', 'skeleton.Rmd'
+    'tint', '..', 'skeleton', 'skeleton.Rmd'
   )
 )
 ```

@@ -8,5 +8,6 @@ Maintainer: Dirk Eddelbuettel <edd@debian.org>
 Description: A Tufte-alike html style for rmarkdown.
 URL: http://dirk.eddelbuettel.com/code/tint.html
 BugReports: https://github.com/eddelbuettel/tint/issues
+Imports: htmltools
 License: GPL (>= 2)
 RoxygenNote: 5.0.1

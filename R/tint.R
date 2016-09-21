@@ -18,13 +18,9 @@
 tint <- function(...) {
 
   html_document2 = function(..., extra_dependencies = list()) {
-    headerfile <- system.file("rmarkdown/templates/tint/resources/header.html", package = "tint")
-    cssfile <- system.file("rmarkdown/templates/tint/resources/tint.css", package = "tint")
     rmarkdown::html_document(
       ...,
-      extra_dependencies = c(extra_dependencies), #, tufte_html_dependency())
-      includes = rmarkdown::includes(in_header = headerfile),
-      css = cssfile
+      extra_dependencies = c(extra_dependencies, tint_html_dependency())
     )
   }
   format = html_document2(theme = NULL, ...)
@@ -113,7 +109,7 @@ tint <- function(...) {
     x <- gsub("^(<h3 class=\"subtitle\">)<em>(.*)</em>(</h3>)$", "\\1\\2\\3",  x)
     x <- gsub("^(<h4 class=\"author\">)<em>(.*)</em>(</h4>)$", "\\1\\2\\3",  x)
     x <- gsub("^(<h4 class=\"date\">)<em>(.*)</em>(</h4>)$", "\\1\\2\\3",  x)
-      
+
     writeUTF8(x, output)
     output
   }
@@ -163,12 +159,14 @@ tint <- function(...) {
 }
 
 #' @importFrom htmltools htmlDependency
-#tufte_html_dependency = function() {
-#  list(htmlDependency(
+tint_html_dependency = function() {
+  list(htmlDependency(
 #    'tufte-css', '2015.12.29',
+    'tint-css', '2015.12.29',
 #    src = template_resources('tufte_html'), stylesheet = 'tufte.css'
-#  ))
-# }
+    src = template_resources('tint'), stylesheet = 'tint.css'
+  ))
+}
 
 # we assume one footnote only contains one paragraph here, although it is
 # possible to write multiple paragraphs in a footnote with Pandoc's Markdown

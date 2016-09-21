@@ -7,19 +7,22 @@
 
 @font-face {
   font-family: "Roboto";
-  src: url("https://fonts.googleapis.com/css?family=Roboto") format("truetype");
+  /*src: url("https://fonts.googleapis.com/css?family=Roboto") format("truetype");*/
+  src: url("font/roboto/Roboto-Regular.ttf");
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Roboto Mono";
-  src: url("https://fonts.googleapis.com/css?family=Roboto+Mono") format("truetype");
+  /*src: url("https://fonts.googleapis.com/css?family=Roboto+Mono") format("truetype");*/
+  src: url("font/roboto/RobotoMono-Regular.ttf");
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Roboto Condensed";
-  src: url("https://fonts.googleapis.com/css?family=Roboto+Condensed") format("truetype");
+  /*src: url("https://fonts.googleapis.com/css?family=Roboto+Condensed") format("truetype");*/
+  src: url("font/roboto/RobotoCondensed-Regular.ttf");
   font-weight: 400;
 }
 
@@ -44,21 +47,21 @@ h1.title { font-weight: 400;
      line-height: 1; }
 
 h1 { font-style: normal;
-     font-weight: 500;
+     font-weight: 400;
      margin-top: 2.1rem;
      margin-bottom: 0;
      font-size: 2.2rem;
      line-height: 1; }
 
 h2 { font-style: normal;
-     font-weight: 300;
+     font-weight: 400;
      font-size: 1.7rem;
      margin-top: 2rem;
      margin-bottom: 0;
      line-height: 1; }
 
 h3.subtitle { font-style: normal;
-             font-weight: 300;
+             font-weight: 400;
              margin-top: 1rem;
              margin-bottom: 1rem;
              font-size: 1.8rem;
@@ -66,7 +69,7 @@ h3.subtitle { font-style: normal;
              line-height: 1; }
 
 h4 { font-style: normal;
-     font-weight: 200;
+     font-weight: 400;
      font-size: 1.4rem;
      margin-top: 1.5rem;
      margin-bottom: 0;
@@ -75,7 +78,7 @@ h4 { font-style: normal;
 
 h4.author, h4.date {
     font-size: 1.4rem;
-    font-weight: 200;
+    font-weight: 400;
     margin: 1rem auto;
     line-height: 1;
 }
