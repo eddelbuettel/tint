@@ -8,8 +8,8 @@
 #'   \code{tint}; this arguments has been set internally)
 #' @references See \url{http://rstudio.github.io/tufte} for an example.
 #' @export
-#' @examples library(tint)
-
+#' @examples \dontrun{library(tint)}
+#' 
 #' @details \code{tint} provides the HTML format based on the Tufte CSS
 #'   \url{https://edwardtufte.github.io/tufte-css/} with fonts set according to
 #' \url{http://nogginfuel.com/envisioned-css/}

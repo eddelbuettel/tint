@@ -76,3 +76,4 @@ gsub_fixed = function(...) gsub(..., fixed = TRUE)
 
 readUTF8 = function(file, ...) readLines(file, encoding = 'UTF-8', warn = FALSE, ...)
 writeUTF8 = function(text, ...) writeLines(enc2utf8(text), ..., useBytes = TRUE)
+

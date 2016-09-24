@@ -53,7 +53,8 @@ Richard Feynman, but with an updated font choice.
 \code{sans_serif()} applies sans-serif fonts to \code{text}.
 }
 \examples{
-library(tint)
+\dontrun{library(tint)}
+
 newthought('In this section')
 }
 \references{
