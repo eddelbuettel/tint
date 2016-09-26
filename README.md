@@ -5,7 +5,7 @@ tint is not tufte
 ### Motivation
 
 The (html and pdf) styles provided by the [tufte](https://cran.r-project.org/package=tufte) package
-make it very easy and convenient to create documents in the celebrated of
+make it very easy and convenient to create documents in the celebrated style of
 [Edward Tufte](https://www.edwardtufte.com/tufte/).
 
 The clear layout, focused use of white space and unparallel use of the margin for complementary
