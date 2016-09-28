@@ -37,9 +37,9 @@ Fully working but still somewhat preliminary. May get added to the [tufte](https
 Install as a package, e.g. via
 
 ```r
-R> if (!requireNamespace("drat", quietly=TRUE)) install.packages("drat")
-R> drat::addRepo("ghrr")                 # make drat repo known
-R> install.packages("tint")
+if (!requireNamespace("drat", quietly=TRUE)) install.packages("drat")
+drat::addRepo("ghrr")                 # make drat repo known
+install.packages("tint")
 ```
 
 and the use _e.g._ as a Markdown template via RStudio, or call `rmarkdown::render()` directly.
