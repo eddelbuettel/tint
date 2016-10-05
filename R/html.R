@@ -159,10 +159,10 @@ tintHtml <- function(...) {
 #' @importFrom htmltools htmlDependency
 tint_html_dependency = function() {
   list(htmlDependency(
-#    'tufte-css', '2015.12.29',
+    ## tufte-css', '2015.12.29',
     'tint-css', '2015.12.29',
-#    src = template_resources('tufte_html'), stylesheet = 'tufte.css'
-    src = template_resources('tint'), stylesheet = 'tint.css'
+    ## src = template_resources('tufte_html'), stylesheet = 'tufte.css'
+    src = template_resources("html"), stylesheet = "tint.css"
   ))
 }
 
