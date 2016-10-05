@@ -117,8 +117,8 @@ $else$
 $endif$
 
 %% -- tint overrides
-%% fonts
-\usepackage[sfdefault]{roboto}
+%% fonts, using roboto (condensed) as default
+\usepackage[sfdefault,condensed]{roboto}
 %% also nice: \usepackage[default]{lato}
 %% macros
 \makeatletter
@@ -137,16 +137,16 @@ $endif$
       %\gdef\@@title{\sffamily\LARGE\allcaps{\@title}\par}%
       %\gdef\@@author{\sffamily\Large\allcaps{\@author}\par}%
       %\gdef\@@date{\sffamily\Large\allcaps{\@date}\par}%
-      \gdef\@@title{\sffamily\LARGE{\@title}\par}%
-      \gdef\@@author{\sffamily\Large{\@author}\par}%
-      \gdef\@@date{\sffamily\Large{\@date}\par}%
+      \gdef\@@title{\begingroup\fontseries{b}\selectfont\LARGE{\@title}\par}%
+      \gdef\@@author{\begingroup\fontseries{l}\selectfont\Large{\@author}\par}%
+      \gdef\@@date{\begingroup\fontseries{l}\selectfont\Large{\@date}\par}%
     }{%
       %\gdef\@@title{\LARGE\itshape\@title\par}%
       %\gdef\@@author{\Large\itshape\@author\par}%
       %\gdef\@@date{\Large\itshape\@date\par}%
-      \gdef\@@title{\LARGE\@title\par}%
-      \gdef\@@author{\Large\@author\par}%
-      \gdef\@@date{\Large\@date\par}%
+      \gdef\@@title{\begingroup\fontseries{b}\selectfont\LARGE\@title\par\endgroup}%
+      \gdef\@@author{\begingroup\fontseries{l}\selectfont\Large\@author\par\endgroup}%
+      \gdef\@@date{\begingroup\fontseries{l}\selectfont\Large\@date\par\endgroup}%
     }%
     \@@title
     \@@author
@@ -161,7 +161,7 @@ $endif$
 \titleformat{\section}%
   [hang]% shape
   %{\normalfont\Large\itshape}% format applied to label+text
-  {\normalfont\Large}% format applied to label+text
+  {\fontseries{b}\selectfont\Large}% format applied to label+text
   {\thesection}% label
   {1em}% horizontal separation between label and title body
   {}% before the title body
@@ -170,7 +170,7 @@ $endif$
 \titleformat{\subsection}%
   [hang]% shape
   %{\normalfont\large\itshape}% format applied to label+text
-  {\normalfont\large}% format applied to label+text
+  {\fontseries{m}\selectfont\large}% format applied to label+text
   {\thesubsection}% label
   {1em}% horizontal separation between label and title body
   {}% before the title body
@@ -179,7 +179,7 @@ $endif$
 \titleformat{\paragraph}%
   [runin]% shape
   %{\normalfont\itshape}% format applied to label+text
-  {\normalfont}% format applied to label+text
+  {\fontseries{l}\selectfont}% format applied to label+text
   {\theparagraph}% label
   {1em}% horizontal separation between label and title body
   {}% before the title body
