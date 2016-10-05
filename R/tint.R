@@ -7,15 +7,13 @@
 #'   \code{\link{tint}} (note you cannot use the \code{theme} argument in
 #'   \code{tint}; this arguments has been set internally)
 #' @references See \url{http://rstudio.github.io/tufte} for an example.
-#' @export
 #' @examples \dontrun{library(tint)}
-#' 
+#'
 #' @details \code{tint} provides the HTML format based on the Tufte CSS
 #'   \url{https://edwardtufte.github.io/tufte-css/} with fonts set according to
 #' \url{http://nogginfuel.com/envisioned-css/}
-#' @rdname tint
 #' @export
-tint <- function(...) {
+tintHtml <- function(...) {
 
   html_document2 = function(..., extra_dependencies = list()) {
     rmarkdown::html_document(
@@ -216,4 +214,10 @@ marginnote_html = function(text = '', icon = '&#8853;') {
     '<label for="tufte-mn-" class="margin-toggle">%s</label>',
     '<input type="checkbox" id="tufte-mn-" class="margin-toggle">%s'
   ), icon, text)
+}
+
+#' @rdname tintHtml
+tint <- function(...)  {
+    .Deprecated("tintHtml")
+    tintHtml(...)
 }

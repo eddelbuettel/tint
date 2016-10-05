@@ -4,7 +4,7 @@
 #'   (\samp{\\newthought{text}}) output.
 #' @param text A character string to be presented as a \dQuote{new thought}
 #'   (using small caps), or a margin note, or a footer of a quote
-#' @rdname tint
+#' @rdname tintHtml
 #' @export
 #' @examples newthought('In this section')
 newthought = function(text) {
@@ -21,7 +21,7 @@ newthought = function(text) {
 #'   margin note (like a sidenote but not numbered).
 #' @param icon A character string to indicate there is a hidden margin note when
 #'   the page width is too narrow (by default it is a circled plus sign)
-#' @rdname tint
+#' @rdname tintHtml
 #' @export
 margin_note = function(text, icon = '&#8853;') {
   if (is_html_output()) {
@@ -37,7 +37,7 @@ margin_note = function(text, icon = '&#8853;') {
 #' @details \code{quote_footer()} formats text as the footer of a quote. It puts
 #'   \code{text} in \samp{<footer></footer>} for HTML output, and
 #'   after \samp{\\hfill} for LaTeX output (to right-align text).
-#' @rdname tint
+#' @rdname tintHtml
 #' @export
 quote_footer = function(text) {
   if (is_html_output()) {
@@ -51,7 +51,7 @@ quote_footer = function(text) {
 }
 
 #' @details \code{sans_serif()} applies sans-serif fonts to \code{text}.
-#' @rdname tint
+#' @rdname tintHtml
 #' @export
 sans_serif = function(text) {
   if (is_html_output()) {

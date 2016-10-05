@@ -4,9 +4,7 @@ subtitle: "An implementation in R Markdown"
 author: "JJ Allaire, Yihui Xie, Dirk Eddelbuettel"
 date: "`r Sys.Date()`"
 output:
-  tint::tintHtml: 
-     default: TRUE
-     self_contained: TRUE
+  tint::tintPdf: 
 bibliography: skeleton.bib
 link-citations: yes
 ---
