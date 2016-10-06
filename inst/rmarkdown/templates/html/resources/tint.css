@@ -7,23 +7,37 @@
 
 @font-face {
   font-family: "Roboto";
-  /*src: url("https://fonts.googleapis.com/css?family=Roboto") format("truetype");*/
-  src: url("font/roboto/Roboto-Regular.ttf");
+  src: url("font/roboto/Roboto-Regular.ttf") format("truetype");
   font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
   font-family: "Roboto Mono";
-  /*src: url("https://fonts.googleapis.com/css?family=Roboto+Mono") format("truetype");*/
-  src: url("font/roboto/RobotoMono-Regular.ttf");
+  src: url("font/roboto/RobotoMono-Regular.ttf") format("truetype");
   font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
   font-family: "Roboto Condensed";
-  /*src: url("https://fonts.googleapis.com/css?family=Roboto+Condensed") format("truetype");*/
-  src: url("font/roboto/RobotoCondensed-Regular.ttf");
+  src: url("font/roboto/RobotoCondensed-Regular.ttf") format("truetype");
   font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto Condensed Bold";
+  src: url("font/roboto/RobotoCondensed-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto Condensed Italic";
+  src: url("font/roboto/RobotoCondensed-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
 }
 
 /* Tufte CSS styles */
@@ -39,15 +53,17 @@ body { width: 87.5%;
        max-width: 1400px;
        counter-reset: sidenote-counter; }
 
-h1.title { font-weight: 400;
+h1.title { font-weight: 700;
      font-style: normal;
+     font-family: 'Roboto Condensed Bold', Arial, Helvetica, sans-serif;
      margin-top: 4rem;
      margin-bottom: 1.5rem;
      font-size: 3.2rem;
      line-height: 1; }
 
 h1 { font-style: normal;
-     font-weight: 400;
+     font-weight: 700;
+     font-family: 'Roboto Condensed Bold', Arial, Helvetica, sans-serif;
      margin-top: 2.1rem;
      margin-bottom: 0;
      font-size: 2.2rem;
@@ -101,6 +117,24 @@ p { line-height: 2rem;
     margin-bottom: 1.4rem;
     padding-right: 0;
     vertical-align: baseline; }
+
+italic {
+    font-style: italic;
+    font-weight: 400;
+    font-family: "Roboto Condensed Italic";
+}
+
+emph {
+    font-style: italic;
+    font-weight: 400;
+    font-family: "Roboto Condensed Italic";
+}
+
+strong {
+    font-style: normal;
+    font-weight: 700;
+    font-family: "Roboto Condensed Bold";
+}
 
 blockquote { font-size: 1.4rem; }
 
