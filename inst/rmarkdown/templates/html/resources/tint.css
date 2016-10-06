@@ -5,6 +5,7 @@
 
 @charset "UTF-8";
 
+
 @font-face {
   font-family: "Roboto";
   src: url("font/roboto/Roboto-Regular.ttf") format("truetype");
@@ -29,7 +30,7 @@
 @font-face {
   font-family: "Roboto Condensed Bold";
   src: url("font/roboto/RobotoCondensed-Bold.ttf") format("truetype");
-  font-weight: 700;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -37,7 +38,7 @@
   font-family: "Roboto Condensed Italic";
   src: url("font/roboto/RobotoCondensed-Italic.ttf") format("truetype");
   font-weight: 400;
-  font-style: italic;
+  font-style: normal;
 }
 
 /* Tufte CSS styles */
@@ -53,7 +54,7 @@ body { width: 87.5%;
        max-width: 1400px;
        counter-reset: sidenote-counter; }
 
-h1.title { font-weight: 700;
+h1.title { font-weight: 400;
      font-style: normal;
      font-family: 'Roboto Condensed Bold', Arial, Helvetica, sans-serif;
      margin-top: 4rem;
@@ -62,7 +63,7 @@ h1.title { font-weight: 700;
      line-height: 1; }
 
 h1 { font-style: normal;
-     font-weight: 700;
+     font-weight: 400;
      font-family: 'Roboto Condensed Bold', Arial, Helvetica, sans-serif;
      margin-top: 2.1rem;
      margin-bottom: 0;
@@ -118,13 +119,7 @@ p { line-height: 2rem;
     padding-right: 0;
     vertical-align: baseline; }
 
-italic {
-    font-style: italic;
-    font-weight: 400;
-    font-family: "Roboto Condensed Italic";
-}
-
-emph {
+em {
     font-style: italic;
     font-weight: 400;
     font-family: "Roboto Condensed Italic";
@@ -132,7 +127,7 @@ emph {
 
 strong {
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     font-family: "Roboto Condensed Bold";
 }
 
