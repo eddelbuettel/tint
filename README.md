@@ -26,7 +26,7 @@ A quick screenshot is below:
 ![](http://eddelbuettel.github.com/tint/tint-region.png)
 
 and the full underlying document is [available too](http://eddelbuettel.github.com/tint/).  Its sources 
-are included in the packages as [skeleton.Rmd](https://github.com/eddelbuettel/tint/blob/master/inst/rmarkdown/templates/tint/skeleton/skeleton.Rmd).
+are included in the packages as [skeleton.Rmd](https://github.com/eddelbuettel/tint/blob/master/inst/rmarkdown/templates/html/skeleton/skeleton.Rmd).
 
 ### Status
 
@@ -52,5 +52,5 @@ Dirk Eddelbuettel, borrowing heavily from JJ and Yihui in
 
 ### License
 
-GPL (>= 2) for my parts and the code from [tufte](https://cran.r-project.org/package=tufte),
+GPL-3 for my parts and the code from [tufte](https://cran.r-project.org/package=tufte),
 mostly MIT for what comes from Dave Liepman and Jef Lippiat.
