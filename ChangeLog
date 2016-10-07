@@ -1,5 +1,8 @@
 2016-10-07  Dirk Eddelbuettel  <edd@debian.org>
 
+	* inst/rmarkdown/templates/pdf/resources/tintPdf-template.tex: No
+	italics in toc either
+
 	* README.md: Added badges, updated CRAN status
 
 2016-10-06  Dirk Eddelbuettel  <edd@debian.org>
