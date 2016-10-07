@@ -1,18 +1,20 @@
 #' Tint Is Not Tufte -- A Tufte-Inspired HTML Format
 #'
-#' A templates for creating handouts according to the style of Edward R. Tufte and
+#' A template for creating html reports according to the style of Edward R. Tufte and
 #' Richard Feynman, but with an updated font choice.
 #'
-#' @param ... Other arguments to be passed to
-#'   \code{\link{tint}} (note you cannot use the \code{theme} argument in
-#'   \code{tint}; this arguments has been set internally)
+#' @param ... Other arguments to be passed to \code{\link{pdf_document}} or
+#'   \code{\link{html_document}} (note you cannot use the \code{template}
+#'   argument in \code{tintPdf} or the \code{theme} argument in
+#'   \code{tintHHtml()}; these arguments have been set internally)
 #' @references See \url{http://rstudio.github.io/tufte} for an example.
-#' @examples \dontrun{library(tint)}
+#' @examples library(tint)
 #'
-#' @details \code{tint} provides the HTML format based on the Tufte CSS
+#' @details \code{tintHtml} provides the HTML format based on the Tufte CSS
 #'   \url{https://edwardtufte.github.io/tufte-css/} with fonts set according to
-#' \url{http://nogginfuel.com/envisioned-css/}
-#' @export
+#' \url{http://nogginfuel.com/envisioned-css/}. \code{tintPdf} provides a similar
+#' PDF format using the same font family and styling applied to the
+#' Tufte-LaTeX \url{https://tufte-latex.github.io/tufte-latex/} class.
 tintHtml <- function(...) {
 
   html_document2 = function(..., extra_dependencies = list()) {

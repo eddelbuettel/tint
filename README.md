@@ -19,9 +19,14 @@ a closer-to-white background.  So I _mixed_ this with the code framework provide
 make it an [RMarkdown](http://rmarkdown.rstudio.com/) template you can use just by installing this
 package. Among the small changes I made were the removal of _italics_ in subheaders and the title.
 
+Similarly, LaTeX styles exists and the
+[tufte](https://cran.r-project.org/package=tufte) supports both pdf
+handouts and a book format.  Here, we also support the pdf handout
+output.
+
 ### Example
 
-A quick screenshot is below:
+A quick screenshot of the html variant is below:
 
 ![](http://eddelbuettel.github.com/tint/tint-region.png)
 
@@ -30,7 +35,7 @@ are included in the packages as [skeleton.Rmd](https://github.com/eddelbuettel/t
 
 ### Status
 
-Fully working but still somewhat preliminary. May get added to the [tufte](https://cran.r-project.org/package=tufte) package.
+The package is working and supports both pdf and html output.
 
 ### Usage 
 
@@ -46,9 +51,11 @@ and the use _e.g._ as a Markdown template via RStudio, or call `rmarkdown::rende
 
 ### Author
 
-Dirk Eddelbuettel, borrowing heavily from JJ and Yihui in 
-[tufte](https://cran.r-project.org/package=tufte), Dave Liepman in the underlying [tufte-css](https://github.com/edwardtufte/tufte-css) and Jef Lippiat in 
-[envisioned css](https://github.com/nogginfuel/envisioned-css).
+Dirk Eddelbuettel, borrowing heavily from JJ and Yihui in
+[tufte](https://cran.r-project.org/package=tufte), Dave Liepman in the underlying
+[tufte-css](https://github.com/edwardtufte/tufte-css), Jef Lippiat in
+[envisioned css](https://github.com/nogginfuel/envisioned-css) and also elying on the work
+of the [Tufte-LaTeX](https://tufte-latex.github.io/tufte-latex/) authors.
 
 ### License
 

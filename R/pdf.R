@@ -1,17 +1,5 @@
-#' Tufte handout formats (PDF and HTML)
-#'
-#' Templates for creating handouts according to the style of Edward R. Tufte and
-#' Richard Feynman.
-#'
-#' \code{tufte_handout()} provides the PDF format based on the Tufte-LaTeX
-#' class: \url{https://tufte-latex.github.io/tufte-latex/}.
 #' @inheritParams rmarkdown::pdf_document
-#' @param ... Other arguments to be passed to \code{\link{pdf_document}} or
-#'   \code{\link{html_document}} (note you cannot use the \code{template}
-#'   argument in \code{tufte_handout} or the \code{theme} argument in
-#'   \code{tufte_html()}; these arguments have been set internally)
-#' @references See \url{http://rstudio.github.io/tufte} for an example.
-#' @examples library(tint)
+#' @rdname tintHtml
 tintPdf <- function(fig_width = 4, fig_height = 2.5, fig_crop = TRUE, dev = 'pdf',
                     highlight = 'default', ...) {
     tintPdfCreate('tufte-handout', fig_width, fig_height, fig_crop, dev, highlight, ...)

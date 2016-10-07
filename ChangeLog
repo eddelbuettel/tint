@@ -1,4 +1,41 @@
+2016-10-06  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version, Date): Release 0.0.2 
+
+	* inst/rmarkdown/templates/html/resources/tint.css: Correct use of
+	italic and bold
+	* inst/rmarkdown/templates/html/resources/font/roboto/: Additional fonts
+
+	* inst/rmarkdown/templates/html/skeleton/skeleton.Rmd: Small edits
+	* inst/rmarkdown/templates/pdf/skeleton/skeleton.Rmd: Ditto
+
+	* R/html.R: Updated roxygen code for help pages
+	* R/pdf.R: Ditto
+	* R/utils.R: Ditto
+	* man/tintHtml.Rd: Updated help page
+
+2016-10-06  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION: Set license to GPL-3 as for tufte, other small edits
+	* README.md: Ditto
+
+2016-10-05  Dirk Eddelbuettel  <edd@debian.org>
+
+	* R/html.R: Renamed from tint.R
+	* inst/rmarkdown/templates/html/: Directory renamed as well
+
+2016-10-03  Dirk Eddelbuettel  <edd@debian.org>
+
+	* R/pdf.R: New function tintPdf()
+	* R/utilsKnitr.R: Helper functions from knitr package
+	* R/utils.R: Updated
+
+	* man/tintPdf.Rd: Added
+
+	* inst/rmarkdown/templates/pdf/resources/tintPdf-template.tex: Added
+
+
 2016-09-24  Dirk Eddelbuettel  <edd@debian.org>
 
-	* DESCRIPTION (Version): First alpha release
+	* DESCRIPTION (Version): First alpha release 0.0.1
 
