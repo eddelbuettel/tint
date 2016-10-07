@@ -1,6 +1,10 @@
+2016-10-07  Dirk Eddelbuettel  <edd@debian.org>
+
+	* README.md: Added badges, updated CRAN status
+
 2016-10-06  Dirk Eddelbuettel  <edd@debian.org>
 
-	* DESCRIPTION (Version, Date): Release 0.0.2 
+	* DESCRIPTION (Version, Date): Release 0.0.2
 
 	* inst/rmarkdown/templates/html/resources/tint.css: Correct use of
 	italic and bold

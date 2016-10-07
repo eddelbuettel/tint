@@ -1,6 +1,10 @@
 ## tint
 
-tint is not tufte
+[![Package-License](http://img.shields.io/badge/license-GPL--3-brightgreen.svg?style=flat)](http://www.gnu.org/licenses/gpl-3.0.html)
+[![License](http://img.shields.io/badge/license-GPL%20%28%3E=%202%29-brightgreen.svg?style=flat)](http://www.gnu.org/licenses/gpl-2.0.html)
+[![CRAN](http://www.r-pkg.org/badges/version/tint)](https://cran.r-project.org/package=tint) [![Downloads](http://cranlogs.r-pkg.org/badges/tint?color=brightgreen)](http://www.r-pkg.org/pkg/tint)
+
+Tint is not Tufte
 
 ### Motivation
 
@@ -35,15 +39,14 @@ are included in the packages as [skeleton.Rmd](https://github.com/eddelbuettel/t
 
 ### Status
 
-The package is working and supports both pdf and html output.
+The package is now on [CRAN](https://cran.r-project.org/package=tint) and
+supports both pdf and html output.
 
 ### Usage 
 
-Install as a package, e.g. via
+Install from [CRAN](https://cran.r-project.org) as any other package, e.g. via
 
 ```r
-R> if (!requireNamespace("drat", quietly=TRUE)) install.packages("drat")
-R> drat::addRepo("ghrr")                 # make drat repo known
 R> install.packages("tint")
 ```
 
