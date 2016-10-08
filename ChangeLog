@@ -1,3 +1,11 @@
+2016-10-08  Dirk Eddelbuettel  <edd@debian.org>
+
+	* tests/simple.R: Minimal test added
+
+	* inst/examples/simple.Rmd: Added (for use in simple tests)
+
+	* .travis.yml: Added
+
 2016-10-07  Dirk Eddelbuettel  <edd@debian.org>
 
 	* inst/rmarkdown/templates/pdf/resources/tintPdf-template.tex: No
