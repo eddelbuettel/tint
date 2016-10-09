@@ -1,3 +1,7 @@
+2016-10-09  Dirk Eddelbuettel  <edd@debian.org>
+
+	* README.md: Add Travis badge
+
 2016-10-08  Dirk Eddelbuettel  <edd@debian.org>
 
 	* tests/simple.R: Minimal test added
