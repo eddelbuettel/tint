@@ -1,7 +1,7 @@
 
 setwd(tempdir())
-file.copy(system.file("examples", "simple.Rmd", package="tint"), "simple.Rmd")
-rmarkdown::render("simple.Rmd")
+file.copy(system.file("examples", "simpleHtml.Rmd", package="tint"), "simpleHtml.Rmd")
+rmarkdown::render("simpleHtml.Rmd")
 
 
 
