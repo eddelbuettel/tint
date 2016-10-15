@@ -1,8 +1,8 @@
 Package: tint
 Type: Package
 Title: Tint is not Tufte
-Version: 0.0.2.2
-Date: 2016-10-14
+Version: 0.0.3
+Date: 2016-10-15
 Author: Dirk Eddelbuettel
 Maintainer: Dirk Eddelbuettel <edd@debian.org>
 Description: A 'tufte'-alike style for 'rmarkdown'.
