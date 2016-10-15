@@ -1,3 +1,10 @@
+2016-10-14  Dirk Eddelbuettel  <edd@debian.org>
+
+	* inst/examples/simplePdf.Rmd: Small edits
+	* inst/examples/simpleHtml.Rmd: Ditto
+	* inst/rmarkdown/templates/pdf/skeleton/skeleton.Rmd: Ditto
+	* inst/rmarkdown/templates/html/skeleton/skeleton.Rmd: Ditto
+
 2016-10-09  Dirk Eddelbuettel  <edd@debian.org>
 
 	* README.md: Add Travis badge

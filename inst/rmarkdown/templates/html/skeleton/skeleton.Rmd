@@ -32,11 +32,12 @@ such as removal of _italics_---but otherwise true to the wonderful
 [tufte](https://github.com/rstudio/tufte) package for R---all baked together into a
 small package providing another template. 
 
+We support _italic_ aka *em* and **strong** annotations for text, as well as `code` snippets.
+
 The package name is a standard package naming recursion: _tint is not tufte_.
 
-The remainder of the [tufte](https://github.com/rstudio/tufte) skeleton document follows as is.
-
-We support _italic_ aka *em* and **strong** annotations for text, as well as `code` snippets.
+The remainder of the [tufte](https://github.com/rstudio/tufte) skeleton document follows as is, with
+only marginal changes to refer to this package for code.
 
 # Introduction
 
@@ -62,7 +63,7 @@ If you have any feature requests or find bugs in **tufte**, please do not hesita
 
 This style provides first and second-level headings (that is, `#` and `##`), demonstrated in the next section. You may get unexpected output if you try to use `###` and smaller headings.
 
-`r newthought('In his later books')`^[[Beautiful Evidence](http://www.edwardtufte.com/tufte/books_be)], Tufte starts each section with a bit of vertical space, a non-indented paragraph, and sets the first few words of the sentence in small caps. To accomplish this using this style, call the `newthought()` function in **tufte** in an _inline R expression_ `` `r ` `` as demonstrated at the beginning of this paragraph.^[Note you should not assume **tufte** has been attached to your R session. You should either `library(tufte)` in your R Markdown document before you call `newthought()`, or use `tufte::newthought()`.]
+`r newthought('In his later books')`^[[Beautiful Evidence](http://www.edwardtufte.com/tufte/books_be)], Tufte starts each section with a bit of vertical space, a non-indented paragraph, and sets the first few words of the sentence in small caps. To accomplish this using this style, call the `newthought()` function in **tufte** in an _inline R expression_ `` `r ` `` as demonstrated at the beginning of this paragraph.^[Note you should not assume **tufte** has been attached to your R session. You should either `library(tufte)` in your R Markdown document before you call `newthought()`, or use `tint::newthought()`.]
 
 # Figures
 
@@ -145,7 +146,7 @@ We know from the Markdown syntax that paragraphs that start with `>` are convert
 
 > "If it weren't for my lawyer, I'd still be in prison. It went a lot faster with two people digging."
 >
-> `r tufte::quote_footer('--- Joe Martin')`
+> `r tint::quote_footer('--- Joe Martin')`
 
 Without using `quote_footer()`, it looks like this (the second line is just a normal paragraph):
 
@@ -226,7 +227,7 @@ To see the R Markdown source of this example document, you may follow [this link
 
 ```{r eval=FALSE}
 file.edit(
-  tufte:::template_resources(
+  tint:::template_resources(
     'tint', '..', 'skeleton', 'skeleton.Rmd'
   )
 )

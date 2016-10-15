@@ -10,7 +10,7 @@ output:
 
 ```{r setup, include=FALSE}
 library(tint)
-# invalidate cache when the tufte version changes
+# invalidate cache when the package version changes
 knitr::opts_chunk$set(tidy = FALSE, cache.extra = packageVersion('tint'))
 options(htmltools.dir.version = FALSE)
 ```
