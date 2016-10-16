@@ -14,7 +14,8 @@ information, including graphs, offer a novel and very valuable resource for typs
 Yet at the same time, not everybody is a fan of the yellow tint, and the fonts.  I had been looking
 for a while for an alternative, and somewhat recently came across
 [envisioned css](https://github.com/nogginfuel/envisioned-css) by Jef Lippiat.  It gets a few things
-very right: use of the beautiful [Roboto font](https://fonts.google.com/specimen/Roboto) along with
+very right: use of the beautiful 
+[Roboto Condensed font](https://fonts.google.com/specimen/Roboto+Condensed) along with
 a closer-to-white background.  So I _mixed_ this with the code framework provided by JJ and Yihui to
 make it an [RMarkdown](http://rmarkdown.rstudio.com/) template you can use just by installing this
 package. Among the small changes I made were the removal of _italics_ in subheaders and the title.
@@ -26,13 +27,24 @@ output.
 
 ### Example
 
+#### HTML
+
 A quick screenshot of the html variant is below:
 
-![](http://eddelbuettel.github.com/tint/tint-region.png)
+![](http://eddelbuettel.github.com/tint/tintHtmlScreenshot.png)
 
 and the full underlying document is [available too](http://eddelbuettel.github.com/tint/).  Its sources 
 are included in the packages as
-[skeleton.Rmd](https://github.com/eddelbuettel/tint/blob/master/inst/rmarkdown/templates/html/skeleton/skeleton.Rmd).
+[html/skeleton.Rmd](https://github.com/eddelbuettel/tint/blob/master/inst/rmarkdown/templates/html/skeleton/skeleton.Rmd).
+
+#### PDF
+
+Another screenshot shows the pdf variant:
+
+![](http://eddelbuettel.github.com/tint/tintPdfScreenshot.png)
+
+and its underlying sources are included as 
+[pdf/skeleton.Rmd](https://github.com/eddelbuettel/tint/blob/master/inst/rmarkdown/templates/html/skeleton/skeleton.Rmd).
 
 ### Status
 
