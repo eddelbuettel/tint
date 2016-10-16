@@ -88,7 +88,7 @@ texlive-pictures
 Dirk Eddelbuettel, borrowing heavily from JJ and Yihui in
 [tufte](https://cran.r-project.org/package=tufte), Dave Liepman in the underlying
 [tufte-css](https://github.com/edwardtufte/tufte-css), Jef Lippiat in
-[envisioned css](https://github.com/nogginfuel/envisioned-css) and also elying on the work
+[envisioned css](https://github.com/nogginfuel/envisioned-css) and also relying on the work
 of the [Tufte-LaTeX](https://tufte-latex.github.io/tufte-latex/) authors.
 
 ### License
