@@ -8,8 +8,8 @@ The (html and pdf) styles provided by the [tufte](https://cran.r-project.org/pac
 make it very easy and convenient to create documents in the celebrated style of
 [Edward Tufte](https://www.edwardtufte.com/tufte/).
 
-The clear layout, focused use of white space and unparallel use of the margin for complementary
-information, including graphs, offer a novel and very valuable resource for typsetting.
+The clear layout, focused use of white space and unparalleled use of the margin for complementary
+information, including graphs, offer a novel and very valuable resource for typesetting.
 
 Yet at the same time, not everybody is a fan of the yellow tint, and the fonts.  I had been looking
 for a while for an alternative, and somewhat recently came across
@@ -53,13 +53,13 @@ supports both pdf and html output.
 
 ### Usage 
 
-Install from [CRAN](https://cran.r-project.org) as any other package, _e.g._, via
+Install from [CRAN](https://cran.r-project.org) as any other package via
 
 ```r
 R> install.packages("tint")
 ```
 
-and the use _e.g._, as a Markdown template via RStudio, or call `rmarkdown::render()` directly.
+and then use as a Markdown template via RStudio, or call `rmarkdown::render()` directly.
 
 ### Requirements
 
