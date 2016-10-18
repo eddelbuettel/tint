@@ -53,22 +53,22 @@ supports both pdf and html output.
 
 ### Usage 
 
-Install from [CRAN](https://cran.r-project.org) as any other package, e.g. via
+Install from [CRAN](https://cran.r-project.org) as any other package, _e.g._, via
 
 ```r
 R> install.packages("tint")
 ```
 
-and the use _e.g._ as a Markdown template via RStudio, or call `rmarkdown::render()` directly.
+and the use _e.g._, as a Markdown template via RStudio, or call `rmarkdown::render()` directly.
 
 ### Requirements
 
-Beyond the R package dependencies a working `pandoc` binary is needed. RStudio installs
-its own copy, otherwise do what is needed on your OS (_i.e._ something like `sudo apt-get
+Beyond the R package dependencies, a working `pandoc` binary is needed. RStudio installs
+its own copy, otherwise do what is needed on your OS (_i.e._, something like `sudo apt-get
 install pandoc pandoc-citeproc`).
 
 The pdf mode requires a fairly complete LaTeX installation.  On Debian/Ubuntu, the
-following packages should provide working set:
+following packages should provide a working set:
 
 ```
 texlive-base
