@@ -1,6 +1,6 @@
 #' Tint Is Not Tufte -- A Tufte-Inspired HTML Format
 #'
-#' A template for creating html reports according to the style of Edward R. Tufte and
+#' A template for creating HTML reports according to the style of Edward R. Tufte and
 #' Richard Feynman, but with an updated font choice.
 #'
 #' @param ... Other arguments to be passed to \code{\link{pdf_document}} or
