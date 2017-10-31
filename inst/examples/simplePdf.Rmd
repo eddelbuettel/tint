@@ -3,9 +3,7 @@ title: "Tint Is Not Tufte"
 subtitle: "An implementation in R Markdown"
 author: "JJ Allaire, Yihui Xie, Dirk Eddelbuettel"
 date: "`r Sys.Date()`"
-output:
-  tint::tintPdf:
-    latex_engine: pdflatex
+output: tint::tintPdf
 ---
 
 ```{r setup, include=FALSE}
