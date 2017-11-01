@@ -1,13 +1,15 @@
 #' @inheritParams rmarkdown::pdf_document
 #' @rdname tintHtml
-tintPdf <- function(fig_width = 4, fig_height = 2.5, fig_crop = TRUE, dev = 'pdf',
-                    highlight = 'default', ...) {
-    tintPdfCreate('tufte-handout', fig_width, fig_height, fig_crop, dev, highlight, ...)
+tintPdf <- function(fig_width = 4, fig_height = 2.5, fig_crop = TRUE,
+                    dev = 'pdf', highlight = 'default',
+                    citation_package = 'natbib', latex_engine = 'pdflatex', ...) {
+    tintPdfCreate('tufte-handout', fig_width, fig_height, fig_crop,
+                  dev, highlight, citation_package, ...)
 }
 
 tintPdfCreate <- function(documentclass = c('tufte-handout', 'tufte-book'),
-                          fig_width = 4, fig_height = 2.5,
-                          fig_crop = TRUE, dev = 'pdf', highlight = 'default',
+                          fig_width = 4, fig_height = 2.5, fig_crop = TRUE,
+                          dev = 'pdf', highlight = 'default', citation_package = 'natbib',
                           template = template_resources('pdf', 'tintPdf-template.tex'), ...) {
 
     ## resolve default highlight
@@ -16,6 +18,7 @@ tintPdfCreate <- function(documentclass = c('tufte-handout', 'tufte-book'),
     ## call the base pdf_document format with the appropriate options
     format <- rmarkdown::pdf_document(fig_width = fig_width, fig_height = fig_height,
                                       fig_crop = fig_crop, dev = dev, highlight = highlight,
+                                      citation_package = citation_package,
                                       template = template, ...)
 
     ## LaTeX document class

@@ -3,12 +3,19 @@ title: "Tint Is Not Tufte"
 subtitle: "An implementation in R Markdown"
 author: "JJ Allaire, Yihui Xie, Dirk Eddelbuettel"
 date: "`r Sys.Date()`"
-output: tint::tintHtml
+output: tint::tintPdf
 bibliography: skeleton.bib
 link-citations: yes
+
+vignette: >
+  %\VignetteIndexEntry{tint PDF Example}
+  %\VignetteKeywords{tint,vignette}
+  %\VignettePackage{tint}
+  %\VignetteEngine{knitr::rmarkdown}
 ---
 
 ```{r setup, include=FALSE}
+library(ggplot2)
 library(tint)
 # invalidate cache when the package version changes
 knitr::opts_chunk$set(tidy = FALSE, cache.extra = packageVersion('tint'))
@@ -34,8 +41,8 @@ We support _italic_ aka *em* and **strong** annotations for text, as well as `co
 
 The package name is a standard package naming recursion: _tint is not tufte_.
 
-The remainder of the [tufte](https://github.com/rstudio/tufte) skeleton document follows as is, with
-only marginal changes to refer to this package for code.
+The remainder of the [tufte](https://github.com/rstudio/tufte) skeleton document follows
+as is, with only marginal changes to refer to this package for code.
 
 # Introduction
 
@@ -221,7 +228,7 @@ There are a few other things in Tufte CSS that we have not mentioned so far. If 
 
 We hope you will enjoy the simplicity of R Markdown and this R package, and we sincerely thank the authors of the Tufte-CSS and Tufte-LaTeX projects for developing the beautiful CSS and LaTeX classes. Our **tufte** package would not have been possible without their heavy lifting.
 
-To see the R Markdown source of this example document, you may follow [this link to Github](https://github.com/eddelbuettel/tint/blob/master/inst/rmarkdown/templates/html/skeleton/skeleton.Rmd), use the wizard in RStudio IDE (`File -> New File -> R Markdown -> From Template`), or open the Rmd file in the package:
+To see the R Markdown source of this example document, you may follow [this link to Github](https://github.com/eddelbuettel/tint/blob/master/inst/rmarkdown/templates/pdf/skeleton/skeleton.Rmd), use the wizard in RStudio IDE (`File -> New File -> R Markdown -> From Template`), or open the Rmd file in the package:
 
 ```{r eval=FALSE}
 file.edit(

@@ -1,3 +1,19 @@
+2017-11-01  Dirk Eddelbuettel  <edd@debian.org>
+
+	* vignettes/tintPDF.Rmd (vignette): New PDF vignette
+	* vignettes/tintHTML.Rmd (vignette): New HTML vignette
+
+	* DESCRIPTION: Added 'VignetteDriver: knitr', 'Suggests: ggplot2'
+	* .travis.yml (install): Also install r-cran-ggplot2
+
+2017-10-31  Dirk Eddelbuettel  <edd@debian.org>
+
+	* R/pdf.R (tintPdf): More default argument
+	* inst/examples/simplePdf.Rmd: Shorter YAML frontmatter
+	* inst/examples/simpleHtml.Rmd: Idem
+	* inst/rmarkdown/templates/pdf/skeleton/skeleton.Rmd: Idem
+	* inst/rmarkdown/templates/html/skeleton/skeleton.Rmd: Idem
+
 2017-04-16  Dirk Eddelbuettel  <edd@debian.org>
 
 	* .travis.yml (before_install): Use https to download

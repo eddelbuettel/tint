@@ -6,9 +6,16 @@ date: "`r Sys.Date()`"
 output: tint::tintHtml
 bibliography: skeleton.bib
 link-citations: yes
+
+vignette: >
+  %\VignetteIndexEntry{tint HTML Example}
+  %\VignetteKeywords{tint,vignette}
+  %\VignettePackage{tint}
+  %\VignetteEngine{knitr::rmarkdown}
 ---
 
 ```{r setup, include=FALSE}
+library(ggplot2)
 library(tint)
 # invalidate cache when the package version changes
 knitr::opts_chunk$set(tidy = FALSE, cache.extra = packageVersion('tint'))
