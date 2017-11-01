@@ -3,6 +3,9 @@
 	* vignettes/tintPDF.Rmd (vignette): New PDF vignette
 	* vignettes/tintHTML.Rmd (vignette): New HTML vignette
 
+	* DESCRIPTION: Added 'VignetteDriver: knitr', 'Suggests: ggplot2'
+	* .travis.yml (install): Also install r-cran-ggplot2
+
 2017-10-31  Dirk Eddelbuettel  <edd@debian.org>
 
 	* R/pdf.R (tintPdf): More default argument

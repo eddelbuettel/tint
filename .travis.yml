@@ -11,7 +11,7 @@ before_install:
   - ./run.sh bootstrap
 
 install:
-  - ./run.sh install_aptget r-cran-htmltools r-cran-knitr r-cran-rmarkdown
+  - ./run.sh install_aptget r-cran-htmltools r-cran-knitr r-cran-rmarkdown r-cran-ggplot2
 
 script:
   - ./run.sh run_tests
