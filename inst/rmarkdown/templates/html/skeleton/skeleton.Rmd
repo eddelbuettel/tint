@@ -3,9 +3,7 @@ title: "Tint Is Not Tufte"
 subtitle: "An implementation in R Markdown"
 author: "JJ Allaire, Yihui Xie, Dirk Eddelbuettel"
 date: "`r Sys.Date()`"
-output:
-  tint::tintHtml: 
-     self_contained: TRUE
+output: tint::tintHtml
 bibliography: skeleton.bib
 link-citations: yes
 ---
