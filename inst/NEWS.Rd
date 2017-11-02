@@ -3,6 +3,16 @@
 \newcommand{\ghpr}{\href{https://github.com/eddelbuettel/tint/pull/#1}{##1}}
 \newcommand{\ghit}{\href{https://github.com/eddelbuettel/tint/issues/#1}{##1}}
 
+\section{Changes in tint version 0.0.4 (2017-11-02)}{
+  \itemize{
+    \item Skeleton files are also installed as vignettes (\ghpr{20}).
+    \item A reference to the Tufte source file now points to tint (Ben
+    Marwick in \ghpr{19}, later extended to other Rmd files).
+    \item Several spelling and grammar errors were corrected too
+    (\ghpr{13} and \ghpr{16} by R. Mark Sharp and Matthew Henderson)
+  }
+}
+
 \section{Changes in tint version 0.0.3 (2016-10-15)}{
   \itemize{
     \item Correct pdf mode to no use italics in table of contents

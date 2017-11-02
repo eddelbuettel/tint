@@ -1,3 +1,7 @@
+2017-11-02  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version, Date): Release 0.0.4
+
 2017-11-01  Dirk Eddelbuettel  <edd@debian.org>
 
 	* vignettes/tintPDF.Rmd (vignette): New PDF vignette
@@ -5,6 +9,10 @@
 
 	* DESCRIPTION: Added 'VignetteDriver: knitr', 'Suggests: ggplot2'
 	* .travis.yml (install): Also install r-cran-ggplot2
+
+	* inst/examples/simplePdf.Rmd: Refer to tint source
+	* inst/examples/simpleHtml.Rmd: Idem
+	* inst/rmarkdown/templates/pdf/skeleton/skeleton.Rmd: Idem
 
 2017-10-31  Dirk Eddelbuettel  <edd@debian.org>
 
@@ -14,9 +22,22 @@
 	* inst/rmarkdown/templates/pdf/skeleton/skeleton.Rmd: Idem
 	* inst/rmarkdown/templates/html/skeleton/skeleton.Rmd: Idem
 
+2017-10-31  Ben Marwick  <benmarwick@hotmail.com>
+
+	* inst/rmarkdown/templates/html/skeleton/skeleton.Rmd: Reference
+	tint, not tufte, source file
+
 2017-04-16  Dirk Eddelbuettel  <edd@debian.org>
 
 	* .travis.yml (before_install): Use https to download
+
+2016-10-17  R. Mark Sharp  <rmsharp@me.com>
+
+	* README.md: Spelling and grammar corrections
+
+2016-10-16  Matthew Henderson  <matthew.james.henderson@gmail.com>
+
+	* README.md: Spelling corrections
 
 2016-10-15  Dirk Eddelbuettel  <edd@debian.org>
 
