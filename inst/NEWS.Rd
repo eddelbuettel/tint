@@ -3,6 +3,13 @@
 \newcommand{\ghpr}{\href{https://github.com/eddelbuettel/tint/pull/#1}{##1}}
 \newcommand{\ghit}{\href{https://github.com/eddelbuettel/tint/issues/#1}{##1}}
 
+\section{Changes in tint version 0.0.5 (2017-11-xx)}{
+  \itemize{
+    \item Only run html rendering regression test on Linux or Windows as
+    the pandoc versions on CRAN are too old elsewhere.
+  }
+}
+
 \section{Changes in tint version 0.0.4 (2017-11-02)}{
   \itemize{
     \item Skeleton files are also installed as vignettes (\ghpr{20}).
