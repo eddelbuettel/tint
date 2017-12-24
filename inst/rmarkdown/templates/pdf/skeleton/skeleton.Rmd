@@ -189,14 +189,15 @@ p
 p + geom_smooth(method = 'lm')
 ```
 
+## Same chunk plots as different figures
 Then two plots from the same code chunk placed in different figure environments:
 
 ```{r fig-margin-separate, fig.margin=TRUE, fig.cap=sprintf("Two plots in separate figure environments in the margin (the %s plot).", c("first", "second")), fig.width=3.5, fig.height=2.5, cache=TRUE}
-knitr::kable(head(iris, 15))
+knitr::kable(head(iris, 15))      # first table
 p
-knitr::kable(head(iris, 12))
+knitr::kable(head(iris, 12))      # second table
 p + geom_smooth(method = 'lm')
-knitr::kable(head(iris, 5))
+knitr::kable(head(iris, 5))       # third table
 ```
 
 We blended some tables in the above code chunk only as _placeholders_ to make sure there is enough vertical space among the margin figures, otherwise they will be stacked tightly together. For a practical document, you should not insert too many margin figures consecutively and make the margin crowded. 
