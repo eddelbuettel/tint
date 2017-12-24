@@ -162,7 +162,7 @@ The rest of this document consists of a few test cases to make sure everything s
 
 ## Two plots in a figure
 First we generate two plots in one figure environment with the chunk option `fig.show = 'hold'`. It is possible that the plot is pushed to the page if it is too big. In that case add `out.width="85%"` option to the chunk, or any other percentage that makes the plots fit in the page.
-```{r fig-two-together, fig.cap="Two plots in one figure environment.", fig.show='hold', cache=TRUE}
+```{r fig-two-together, fig.cap="Two plots in one figure environment.", fig.show='hold', out.width="85%", cache=TRUE, message=FALSE}
 p <- ggplot(mtcars2, aes(hp, mpg, color = am)) +
   geom_point()
 p
