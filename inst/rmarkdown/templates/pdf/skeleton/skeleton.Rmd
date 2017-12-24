@@ -45,8 +45,8 @@ The Tufte handout style is a style that Edward Tufte uses in his books and hando
 title: "An Example Using the Tufte Style"
 author: "John Smith"
 output:
-  tufte::tufte_handout: default
-  tufte::tufte_html: default
+  tint::tintPdf: default
+  tint::tintHtml: default
 ---
 ```
 
