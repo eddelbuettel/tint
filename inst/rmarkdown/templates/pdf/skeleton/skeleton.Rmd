@@ -158,8 +158,10 @@ The HTML page is responsive in the sense that when the page width is smaller tha
 
 # More Examples
 
-The rest of this document consists of a few test cases to make sure everything still works well in slightly more complicated scenarios. First we generate two plots in one figure environment with the chunk option `fig.show = 'hold'`:
+The rest of this document consists of a few test cases to make sure everything still works well in slightly more complicated scenarios. 
 
+## Two plots in a figure
+First we generate two plots in one figure environment with the chunk option `fig.show = 'hold'`. It is possible that the plot is pushed to the page if it is too big. In that case add `out.width="85%"` option to the chunk, or any other percentage that makes the plots fit in the page.
 ```{r fig-two-together, fig.cap="Two plots in one figure environment.", fig.show='hold', cache=TRUE}
 p <- ggplot(mtcars2, aes(hp, mpg, color = am)) +
   geom_point()
