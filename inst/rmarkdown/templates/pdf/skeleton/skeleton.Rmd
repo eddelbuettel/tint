@@ -202,7 +202,8 @@ knitr::kable(head(iris, 5))       # third table
 
 We blended some tables in the above code chunk only as _placeholders_ to make sure there is enough vertical space among the margin figures, otherwise they will be stacked tightly together. For a practical document, you should not insert too many margin figures consecutively and make the margin crowded. 
 
-You do not have to assign captions to figures. We show three figures with no captions below in the margin, in the main column, and in full width, respectively.
+## Omitting captions in figures
+You do not have to assign captions to figures. We show three figures with no captions below **(1)** in the margin, **(1)** in the main column, and **(3)** in full width, respectively.
 
 ```{r fig-nocap-margin, fig.margin=TRUE, fig.width=3.5, fig.height=2, cache=TRUE}
 # a boxplot of weight vs transmission; this figure
