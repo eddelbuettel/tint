@@ -177,6 +177,11 @@ Then two plots in separate figure environments (the code is identical to the pre
 
 You may have noticed that the two figures have different captions, and that is because we used a character vector of length 2 for the chunk option `fig.cap` (something like `fig.cap = c('first plot', 'second plot')`).
 
+We also reduced the size of the figures canvas with `out.width` to make the two plots fit in the same page.
+
+Another thing we did, to avoid code repetition, is using `ref.label='fig-two-together'` to apply the code in the chunk `fig-two-together`.
+
+## Multiple plots as margin figures
 Next we show multiple plots in margin figures. Similarly, two plots in the same figure environment in the margin:
 
 ```{r fig-margin-together, fig.margin=TRUE, fig.show='hold', fig.cap="Two plots in one figure environment in the margin.", fig.width=3.5, fig.height=2.5, cache=TRUE}
