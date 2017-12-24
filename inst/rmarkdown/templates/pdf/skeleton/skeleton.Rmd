@@ -3,7 +3,9 @@ title: "Tint Is Not Tufte"
 subtitle: "An implementation in R Markdown"
 author: "JJ Allaire, Yihui Xie, Dirk Eddelbuettel"
 date: "`r Sys.Date()`"
-output: tint::tintPdf
+output: 
+    tint::tintPdf: default
+    tint::tintHtml: default
 bibliography: skeleton.bib
 link-citations: yes
 ---
@@ -22,31 +24,23 @@ library(ggplot2)
 ggplot(mtcars, aes(wt, mpg)) + geom_point(size=3, aes(colour=factor(cyl))) + theme(legend.position="none")
 ```
 
-[tint](http://github.com/eddelbuettel/tint) is straightforward mix of the (html and pdf
-parts of the) excellent [tufte](https://github.com/rstudio/tufte) package by JJ and Yihui,
-mixed with the [Roboto Condensed](https://fonts.google.com/specimen/Roboto+Condensed) font
-use and color scheme proposed by [envisioned css](http://nogginfuel.com/envisioned-css/)
-plus minor style changes such as removal of _italics_---but otherwise true to the
-wonderful [tufte](https://github.com/rstudio/tufte) package for R---all baked together
-into a small package providing another template.
+[tint](http://github.com/eddelbuettel/tint) is straightforward mix of the (html and pdf parts of the) excellent [tufte](https://github.com/rstudio/tufte) package by JJ and Yihui, mixed with the [Roboto Condensed](https://fonts.google.com/specimen/Roboto+Condensed) font use and color scheme proposed by [envisioned css](http://nogginfuel.com/envisioned-css/) plus minor style changes such as removal of _italics_---but otherwise true to the wonderful [tufte](https://github.com/rstudio/tufte) package for R---all baked together into a small package providing another template: *Tint_is_not_Tufte*.
 
 We support _italic_ aka *em* and **strong** annotations for text, as well as `code` snippets.
 
 The package name is a standard package naming recursion: _tint is not tufte_.
 
-The remainder of the [tufte](https://github.com/rstudio/tufte) skeleton document follows
-as is, with only marginal changes to refer to this package for code.
+The remainder of the [tufte](https://github.com/rstudio/tufte) skeleton document follows as is, with only marginal changes to refer to this package for code.
 
 # Introduction
-
-The Tufte handout style is a style that Edward Tufte uses in his books and handouts. Tufte's style is known for its extensive use of sidenotes, tight integration of graphics with text, and well-set typography. This style has been implemented in LaTeX and HTML/CSS^[See Github repositories [tufte-latex](https://github.com/tufte-latex/tufte-latex) and [tufte-css](https://github.com/edwardtufte/tufte-css)], respectively. We have ported both implementations into the [**tufte** package](https://github.com/rstudio/tufte). If you want LaTeX/PDF output, you may use the `tufte_handout` format for handouts, and `tufte_book` for books. For HTML output, use `tufte_html`. These formats can be either specified in the YAML metadata at the beginning of an R Markdown document (see an example below), or passed to the `rmarkdown::render()` function. See @R-rmarkdown for more information about **rmarkdown**.
+The Tufte handout style is a style that Edward Tufte uses in his books and handouts. Tufte's style is known for its extensive use of sidenotes, tight integration of graphics with text, and well-set typography. This style has been implemented in LaTeX and HTML/CSS^[See Github repositories [tufte-latex](https://github.com/tufte-latex/tufte-latex) and [tufte-css](https://github.com/edwardtufte/tufte-css)], respectively. We have ported both implementations into the [**tufte** package](https://github.com/rstudio/tufte). If you want LaTeX/PDF output, you may use the `tint::tintPdf` format for PDF printouts. For HTML output, use `tint::tintHtml`. These formats can be either specified in the YAML metadata at the beginning of an R Markdown document (see an example below), or passed to the `rmarkdown::render()` function. See @R-rmarkdown for more information about **rmarkdown**.
 ```yaml
 ---
 title: "An Example Using the Tufte Style"
 author: "John Smith"
 output:
-  tufte::tufte_handout: default
-  tufte::tufte_html: default
+  tint::tintPdf: default
+  tint::tintHtml: default
 ---
 ```
 
@@ -55,13 +49,14 @@ There are two goals of this package:
 1. To produce both PDF and HTML output with similar styles from the same R Markdown document;
 1. To provide simple syntax to write elements of the Tufte style such as side notes and margin figures, e.g. when you want a margin figure, all you need to do is the chunk option `fig.margin = TRUE`, and we will take care of the deails for you, so you never need to think about `\begin{marginfigure} \end{marginfigure}` or `<span class="marginfigure"> </span>`; the LaTeX and HTML code under the hood may be complicated, but you never need to learn or write such code.
 
-If you have any feature requests or find bugs in **tufte**, please do not hesitate to file them to https://github.com/rstudio/tufte/issues. For general questions, you may ask them on StackOverflow: http://stackoverflow.com/tags/rmarkdown.
+If you have any feature requests or find bugs in **tint**, please do not hesitate to file them to https://github.com/eddelbuettel/tint/issues. For general questions, you may ask them on StackOverflow: http://stackoverflow.com/tags/rmarkdown.
+
 
 # Headings
 
 This style provides first and second-level headings (that is, `#` and `##`), demonstrated in the next section. You may get unexpected output if you try to use `###` and smaller headings.
 
-`r newthought('In his later books')`^[[Beautiful Evidence](http://www.edwardtufte.com/tufte/books_be)], Tufte starts each section with a bit of vertical space, a non-indented paragraph, and sets the first few words of the sentence in small caps. To accomplish this using this style, call the `newthought()` function in **tufte** in an _inline R expression_ `` `r ` `` as demonstrated at the beginning of this paragraph.^[Note you should not assume **tufte** has been attached to your R session. You should either `library(tufte)` in your R Markdown document before you call `newthought()`, or use `tint::newthought()`.]
+`r newthought('In his later books')`^[[Beautiful Evidence](http://www.edwardtufte.com/tufte/books_be)], Tufte starts each section with a bit of vertical space, a non-indented paragraph, and sets the first few words of the sentence in small caps. To accomplish this using this style, call the `newthought()` function in **tint** in an _inline R expression_ `` `r ` `` as demonstrated at the beginning of this paragraph.^[Note you should not assume **tint** has been attached to your R session. You should either `library(tint)` in your R Markdown document before you call `newthought()`, or use `tint::newthought()`.]
 
 # Figures
 
@@ -91,7 +86,7 @@ We know from _the first fundamental theorem of calculus_ that for $x$ in $[a, b]
 $$\frac{d}{dx}\left( \int_{a}^{x} f(u)\,du\right)=f(x).$$
 ```
 
-For the sake of portability between LaTeX and HTML, you should keep the margin content as simple as possible (syntax-wise) in the `marginefigure` blocks. You may use simple Markdown syntax like `**bold**` and `_italic_` text, but please refrain from using footnotes, citations, or block-level elements (e.g. blockquotes and lists) there.
+For the sake of portability between LaTeX and HTML, you should keep the margin content as simple as possible (syntax-wise) in the `marginfigure` blocks. You may use simple Markdown syntax like `**bold**` and `_italic_` text, but please refrain from using footnotes, citations, or block-level elements (e.g. blockquotes and lists) there.
 
 ## Full Width Figures
 
@@ -140,7 +135,7 @@ knitr::kable(
 
 # Block Quotes
 
-We know from the Markdown syntax that paragraphs that start with `>` are converted to block quotes. If you want to add a right-aligned footer for the quote, you may use the function `quote_footer()` from **tufte** in an inline R expression. Here is an example:
+We know from the Markdown syntax that paragraphs that start with `>` are converted to block quotes. If you want to add a right-aligned footer for the quote, you may use the function `quote_footer()` from **tint** in an inline R expression. Here is an example:
 
 > "If it weren't for my lawyer, I'd still be in prison. It went a lot faster with two people digging."
 >
@@ -158,22 +153,30 @@ The HTML page is responsive in the sense that when the page width is smaller tha
 
 # More Examples
 
-The rest of this document consists of a few test cases to make sure everything still works well in slightly more complicated scenarios. First we generate two plots in one figure environment with the chunk option `fig.show = 'hold'`:
+The rest of this document consists of a few test cases to make sure everything still works well in slightly more complicated scenarios. 
 
-```{r fig-two-together, fig.cap="Two plots in one figure environment.", fig.show='hold', cache=TRUE}
+## Two plots in a figure
+First we generate two plots in one figure environment with the chunk option `fig.show = 'hold'`. It is possible that the plot is pushed to the page if it is too big. In that case add `out.width="85%"` option to the chunk, or any other percentage that makes the plots fit in the page.
+```{r fig-two-together, fig.cap="Two plots in one figure environment.", fig.show='hold', out.width="85%", cache=TRUE, message=FALSE}
 p <- ggplot(mtcars2, aes(hp, mpg, color = am)) +
-  geom_point()
+  geom_point()        # First plot
 p
-p + geom_smooth()
+p + geom_smooth()     # Second plot
 ```
 
+## Two plots in separate figures
 Then two plots in separate figure environments (the code is identical to the previous code chunk, but the chunk option is the default `fig.show = 'asis'` now):
 
-```{r fig-two-separate, ref.label='fig-two-together', fig.cap=sprintf("Two plots in separate figure environments (the %s plot).", c("first", "second")), cache=TRUE}
+```{r fig-two-separate, ref.label='fig-two-together', fig.cap=sprintf("Two plots in separate figure environments (the %s plot).", c("first", "second")), cache=TRUE, out.width="80%"}
 ```
 
 You may have noticed that the two figures have different captions, and that is because we used a character vector of length 2 for the chunk option `fig.cap` (something like `fig.cap = c('first plot', 'second plot')`).
 
+We also reduced the size of the figures canvas with `out.width` to make the two plots fit in the same page.
+
+Another thing we did, to avoid code repetition, is using `ref.label='fig-two-together'` to apply the code in the chunk `fig-two-together`.
+
+## Multiple plots as margin figures
 Next we show multiple plots in margin figures. Similarly, two plots in the same figure environment in the margin:
 
 ```{r fig-margin-together, fig.margin=TRUE, fig.show='hold', fig.cap="Two plots in one figure environment in the margin.", fig.width=3.5, fig.height=2.5, cache=TRUE}
@@ -181,19 +184,21 @@ p
 p + geom_smooth(method = 'lm')
 ```
 
+## Same chunk plots as different figures
 Then two plots from the same code chunk placed in different figure environments:
 
 ```{r fig-margin-separate, fig.margin=TRUE, fig.cap=sprintf("Two plots in separate figure environments in the margin (the %s plot).", c("first", "second")), fig.width=3.5, fig.height=2.5, cache=TRUE}
-knitr::kable(head(iris, 15))
+knitr::kable(head(iris, 15))      # first table
 p
-knitr::kable(head(iris, 12))
+knitr::kable(head(iris, 12))      # second table
 p + geom_smooth(method = 'lm')
-knitr::kable(head(iris, 5))
+knitr::kable(head(iris, 5))       # third table
 ```
 
 We blended some tables in the above code chunk only as _placeholders_ to make sure there is enough vertical space among the margin figures, otherwise they will be stacked tightly together. For a practical document, you should not insert too many margin figures consecutively and make the margin crowded. 
 
-You do not have to assign captions to figures. We show three figures with no captions below in the margin, in the main column, and in full width, respectively.
+## Omitting captions in figures
+You do not have to assign captions to figures. We show three figures with no captions below **(1)** in the margin, **(1)** in the main column, and **(3)** in full width, respectively.
 
 ```{r fig-nocap-margin, fig.margin=TRUE, fig.width=3.5, fig.height=2, cache=TRUE}
 # a boxplot of weight vs transmission; this figure
@@ -219,7 +224,11 @@ There are a few other things in Tufte CSS that we have not mentioned so far. If 
 >
 > `r quote_footer('--- Dave Barry')`
 
-We hope you will enjoy the simplicity of R Markdown and this R package, and we sincerely thank the authors of the Tufte-CSS and Tufte-LaTeX projects for developing the beautiful CSS and LaTeX classes. Our **tufte** package would not have been possible without their heavy lifting.
+## Acknowledgements
+
+We hope you will enjoy the simplicity of R Markdown and this R package, and we sincerely thank the authors of the Tufte-CSS and Tufte-LaTeX projects for developing the beautiful CSS and LaTeX classes. Our **tint** package would not have been possible without their heavy lifting.
+
+## Using `tint`
 
 To see the R Markdown source of this example document, you may follow [this link to Github](https://github.com/eddelbuettel/tint/blob/master/inst/rmarkdown/templates/pdf/skeleton/skeleton.Rmd), use the wizard in RStudio IDE (`File -> New File -> R Markdown -> From Template`), or open the Rmd file in the package:
 
