@@ -140,7 +140,7 @@ knitr::kable(
 
 # Block Quotes
 
-We know from the Markdown syntax that paragraphs that start with `>` are converted to block quotes. If you want to add a right-aligned footer for the quote, you may use the function `quote_footer()` from **tufte** in an inline R expression. Here is an example:
+We know from the Markdown syntax that paragraphs that start with `>` are converted to block quotes. If you want to add a right-aligned footer for the quote, you may use the function `quote_footer()` from **tint** in an inline R expression. Here is an example:
 
 > "If it weren't for my lawyer, I'd still be in prison. It went a lot faster with two people digging."
 >
