@@ -44,7 +44,7 @@ The package name is a standard package naming recursion: _tint is not tufte_.
 The remainder of the [tufte](https://github.com/rstudio/tufte) skeleton document follows
 as is, with only marginal changes to refer to this package for code, and to minimize
 dependencies^[The default smoother used in some of the plots would require the 
-[mgcv](https://cloud.r-project.org/package=mgcv) package.].
+[mgcv](https://cran.r-project.org/package=mgcv) package.].
 
 # Introduction
 
