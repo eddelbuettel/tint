@@ -1,3 +1,9 @@
+2018-01-05  Dirk Eddelbuettel  <edd@debian.org>
+
+	* vignettes/tintHTML.Rmd (knitr): Modified geom_smooth calls to
+	not require mgcv as a hidden dependency 
+	* vignettes/tintPDF.Rmd (knitr): Idem
+
 2017-11-04  Dirk Eddelbuettel  <edd@debian.org>
 
 	* tests/simple.R: Condition html rendering test on being on Linux or
