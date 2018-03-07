@@ -4,6 +4,7 @@
 \alias{tintHtml}
 \alias{tint}
 \alias{tintPdf}
+\alias{tintBook}
 \alias{newthought}
 \alias{margin_note}
 \alias{quote_footer}
@@ -15,6 +16,10 @@ tintHtml(...)
 tint(...)
 
 tintPdf(fig_width = 4, fig_height = 2.5, fig_crop = TRUE, dev = "pdf",
+  highlight = "default", citation_package = "natbib",
+  latex_engine = "pdflatex", ...)
+
+tintBook(fig_width = 4, fig_height = 2.5, fig_crop = TRUE, dev = "pdf",
   highlight = "default", citation_package = "natbib",
   latex_engine = "pdflatex", ...)
 
@@ -66,7 +71,8 @@ Richard Feynman, but with an updated font choice.
   \url{https://edwardtufte.github.io/tufte-css/} with fonts set according to
 \url{http://nogginfuel.com/envisioned-css/}. \code{tintPdf} provides a similar
 PDF format using the same font family and styling applied to the
-Tufte-LaTeX \url{https://tufte-latex.github.io/tufte-latex/} class.
+Tufte-LaTeX \url{https://tufte-latex.github.io/tufte-latex/} class. \code{tintBook}
+is a (currently rather experimental) pdf book variant.
 
 \code{newthought()} can be used in inline R expressions in R
   Markdown (e.g. \samp{`r newthought(Some text)`}), and it works for both

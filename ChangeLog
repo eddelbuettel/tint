@@ -1,3 +1,16 @@
+2018-03-07  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version, Date): New minor release
+
+2018-03-06  Dirk Eddelbuettel  <edd@debian.org>
+
+	* R/pdf.R (tintBook): Minimal wrapper for tufte-book
+	* R/html.R: Added few words to roxygen for tintBook()
+	* man/tintHtml.Rd: Ditto
+	* inst/rmarkdown/templates/pdf/resources/tintBook-template.tex:
+	  template used in new style
+	* NAMESPACE: Export tintBook()
+
 2018-01-05  Dirk Eddelbuettel  <edd@debian.org>
 
 	* DESCRIPTION (Version, Date): Release 0.0.5
