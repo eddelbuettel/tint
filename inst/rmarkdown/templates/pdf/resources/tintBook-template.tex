@@ -159,11 +159,17 @@ $endif$
       %\gdef\@@title{\LARGE\itshape\@title\par}%
       %\gdef\@@author{\Large\itshape\@author\par}%
       %\gdef\@@date{\Large\itshape\@date\par}%
-      \gdef\@@title{\begingroup\fontseries{b}\selectfont\LARGE\@title\par\endgroup}%
-      \gdef\@@author{\begingroup\fontseries{l}\selectfont\Large\@author\par\endgroup}%
-      \gdef\@@date{\begingroup\fontseries{l}\selectfont\Large\@date\par\endgroup}%
+      %\gdef\@@title{\begingroup\fontseries{b}\selectfont\LARGE\@title\par\endgroup}%
+      %\gdef\@@author{\begingroup\fontseries{l}\selectfont\Large\@author\par\endgroup}%
+      %\gdef\@@date{\begingroup\fontseries{l}\selectfont\Large\@date\par\endgroup}%
+      \gdef\@@title{\begingroup\fontseries{b}\fontsize{28}{60}\selectfont\@title\par\endgroup}%
+      \gdef\@@author{\begingroup\fontseries{l}\fontsize{16}{20}\selectfont\@author\par\endgroup}%
+      \gdef\@@date{\begingroup\fontseries{l}\fontsize{16}{20}\selectfont\@date\par\endgroup}%
     }%
+    \phantom{XXX}
+    \vspace{12pc}
     \@@title
+    \vspace{4pc}
     \@@author
     \@@date
   \endgroup
@@ -177,7 +183,7 @@ $endif$
   [display]% shape
   {\relax\ifthenelse{\NOT\boolean{@tufte@symmetric}}{\begin{fullwidth}}{}}% format applied to label+text
   %{\itshape\huge\thechapter}% label
-  {\huge\thechapter}% label
+  {\huge Chapter \thechapter}% label
   {0pt}% horizontal separation between label and title body
   %{\huge\rmfamily\itshape}% before the title body
   {\fontseries{b}\selectfont\huge}% before the title body
