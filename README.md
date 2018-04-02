@@ -25,6 +25,9 @@ Similarly, LaTeX styles exists and the
 handouts and a book format.  Here, we also support the pdf handout
 output.
 
+Lately, we have been looking into book-length documents as well, so far only in pdf mode.  A so-far
+somewhat experimental `tintBook` is being added in the master branch.
+
 ### Example
 
 #### HTML
