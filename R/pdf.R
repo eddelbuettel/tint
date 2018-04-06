@@ -1,7 +1,7 @@
 #' @inheritParams rmarkdown::pdf_document
 #' @rdname tintHtml
 tintPdf <- function(fig_width = 4, fig_height = 2.5, fig_crop = TRUE,
-                    dev = 'pdf', highlight = 'default',
+                    dev = 'pdf', highlight = 'tango',
                     citation_package = 'natbib', latex_engine = 'pdflatex', ...) {
     tintPdfCreate('tufte-handout', fig_width, fig_height, fig_crop,
                   dev, highlight, citation_package, ...)
