@@ -16,11 +16,11 @@ tintHtml(...)
 tint(...)
 
 tintPdf(fig_width = 4, fig_height = 2.5, fig_crop = TRUE, dev = "pdf",
-  highlight = "default", citation_package = "natbib",
+  highlight = "tango", citation_package = "natbib",
   latex_engine = "pdflatex", ...)
 
 tintBook(fig_width = 4, fig_height = 2.5, fig_crop = TRUE, dev = "pdf",
-  highlight = "default", citation_package = "natbib",
+  highlight = "tango", citation_package = "natbib",
   latex_engine = "pdflatex", ...)
 
 newthought(text)
