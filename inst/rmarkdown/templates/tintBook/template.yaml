@@ -1,0 +1,5 @@
+name: Tint is not Tufte (PDF, book)
+description: >
+  Tufte-alike template for creating a book-length document
+  with updated font choices
+create_dir: false

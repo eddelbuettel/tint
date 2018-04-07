@@ -1,3 +1,13 @@
+2018-04-07  Dirk Eddelbuettel  <edd@debian.org>
+
+	* inst/rmarkdown/templates/tintBook/: Template for tintBook variant
+
+	* inst/rmarkdown/templates/tintPdf/: Renamed from pdf
+	* inst/rmarkdown/templates/tintHtml/: Renamed from html
+
+	* R/pdf.R (tintBook): Path adjusted
+	* R/html.R (tintHtml): Idem
+
 2018-04-06  Dirk Eddelbuettel  <edd@debian.org>
 
 	* R/pdf.R (tintPdf): Set default to 'tango'
