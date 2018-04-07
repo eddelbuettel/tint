@@ -36,7 +36,7 @@ tintPdfCreate <- function(documentclass = c('tufte-handout', 'tufte-book'),
     documentclass = match.arg(documentclass)
     format$pandoc$args <- c(
         format$pandoc$args, '--variable', paste0('documentclass:', documentclass),
-        if (documentclass == 'tufte-book') '--chapters'
+        if (documentclass == 'tufte-book') "--top-level-division=chapter"
     )
 
     knitr::knit_engines$set(marginfigure = function(options) {

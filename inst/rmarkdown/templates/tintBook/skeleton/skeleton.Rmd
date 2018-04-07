@@ -30,11 +30,12 @@ plus minor style changes such as removal of _italics_---but otherwise true to th
 wonderful [tufte](https://github.com/rstudio/tufte) package for R---all baked together
 into a small package providing another template.
 
-This `tintBook` variant is for book-length document in pdf; there are is also
+NB: This `tintBook` variant is for book-length document in pdf; there are is also
 short `tintPdf` variant suitable for handouts or articles along with a
 similar `tintHtml` variant for shorter web-based documents.  There is
 currently no book-length html variant as we find all current html / css / js
-offerings for this unsatisfactory.
+offerings for this unsatisfactory. Also note that we use the exact same input as 
+for the other two formats and have not yet customized this for a book.
 
 We support _italic_ aka *em* and **strong** annotations for text, as well as `code` snippets.
 
