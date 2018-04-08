@@ -165,7 +165,7 @@ tint_html_dependency = function() {
     ## tufte-css', '2015.12.29',
     'tint-css', '2015.12.29',
     ## src = template_resources('tufte_html'), stylesheet = 'tufte.css'
-    src = template_resources("html"), stylesheet = "tint.css"
+    src = template_resources("tintHtml"), stylesheet = "tint.css"
   ))
 }
 
