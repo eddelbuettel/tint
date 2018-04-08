@@ -12,7 +12,7 @@ The clear layout, focused use of white space and unparalleled use of the margin 
 information, including graphs, offer a novel and very valuable resource for typesetting.
 
 Yet at the same time, not everybody is a fan of the yellow tint, and the fonts.  I had been looking
-for a while for an alternative, and somewhat recently came across
+for a while for an alternative, and came across 
 [envisioned css](https://github.com/nogginfuel/envisioned-css) by Jef Lippiat.  It gets a few things
 very right: use of the beautiful 
 [Roboto Condensed font](https://fonts.google.com/specimen/Roboto+Condensed) along with
@@ -22,11 +22,9 @@ package. Among the small changes I made were the removal of _italics_ in subhead
 
 Similarly, LaTeX styles exists and the
 [tufte](https://cran.r-project.org/package=tufte) supports both pdf
-handouts and a book format.  Here, we also support the pdf handout
-output.
+handouts and a book format.  We first supported the pdf handout
+output only, and added support for a pdf book format in release 0.1.0.
 
-Lately, we have been looking into book-length documents as well, so far only in pdf mode.  A so-far
-somewhat experimental `tintBook` is being added in the master branch.
 
 ### Example
 
@@ -38,21 +36,28 @@ A quick screenshot of the html variant is below:
 
 and the full underlying document is [available too](http://eddelbuettel.github.com/tint/).  Its sources 
 are included in the packages as
-[html/skeleton.Rmd](https://github.com/eddelbuettel/tint/blob/master/inst/rmarkdown/templates/html/skeleton/skeleton.Rmd).
+[html/skeleton.Rmd](https://github.com/eddelbuettel/tint/blob/master/inst/rmarkdown/templates/tintHtml/skeleton/skeleton.Rmd).
 
 #### PDF
 
-Another screenshot shows the pdf variant:
+Another screenshot shows the pdf handout variant:
 
 ![](http://eddelbuettel.github.com/tint/tintPdfScreenshot.png)
 
 and its underlying sources are included as 
-[pdf/skeleton.Rmd](https://github.com/eddelbuettel/tint/blob/master/inst/rmarkdown/templates/html/skeleton/skeleton.Rmd).
+[pdf/skeleton.Rmd](https://github.com/eddelbuettel/tint/blob/master/inst/rmarkdown/templates/tintPdf/skeleton/skeleton.Rmd).
+
+Here is a screenshot of the book format (which was added with release 0.1.0), showing a chapter-opening page on the left:
+
+![](http://eddelbuettel.github.com/tint/tintBookScreenshot.png)
+
 
 ### Status
 
 The package is now on [CRAN](https://cran.r-project.org/package=tint) and
-supports both pdf and html output.
+supports both pdf and html output for handouts, as well as pdf format for
+book-length documents.  This latter style can be used with `rmarkdown` or 
+`bookdown`.
 
 ### Usage 
 
@@ -63,6 +68,7 @@ R> install.packages("tint")
 ```
 
 and then use as a Markdown template via RStudio, or call `rmarkdown::render()` directly.
+We have also used the book-length format via `bookdown::render_book()`.
 
 ### Requirements
 
