@@ -3,6 +3,14 @@
 \newcommand{\ghpr}{\href{https://github.com/eddelbuettel/tint/pull/#1}{##1}}
 \newcommand{\ghit}{\href{https://github.com/eddelbuettel/tint/issues/#1}{##1}}
 
+\section{Changes in tint version 0.1.0 (2018-04-08)}{
+  \itemize{
+    \item A new template `tintBook` was added.
+    \item The pdf variants now default to `tango` as the highlighting
+    style.
+  }
+}
+
 \section{Changes in tint version 0.0.5 (2018-01-05)}{
   \itemize{
     \item Only run html rendering regression test on Linux or Windows as
