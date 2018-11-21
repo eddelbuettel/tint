@@ -128,12 +128,11 @@ tintPdf <- function(fig_width = 4, fig_height = 2.5, fig_crop = TRUE,
                   latex_engine = latex_engine, ...)
 }
 
-#' @inheritParams tintPdf
+#' @inheritParams rmarkdown::pdf_document
 #' @rdname tintHtml
 tintBook <- function(fig_width = 4, fig_height = 2.5, fig_crop = TRUE,
                     dev = 'pdf', highlight = 'tango',
-                    citation_package = 'natbib', latex_engine = 'pdflatex', 
-                    ...) {
+                    citation_package = 'natbib', latex_engine = 'pdflatex', ...) {
     # The manipulation of the ellipsis argument below allows us to 
     # inject a default template argument if one is not present, but
     # to use an optional supplied argument.
