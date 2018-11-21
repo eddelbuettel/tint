@@ -12,4 +12,4 @@ Imports: htmltools, knitr, rmarkdown
 Suggests: ggplot2
 VignetteBuilder: knitr
 License: GPL-3
-RoxygenNote: 6.0.1
+RoxygenNote: 6.1.1
