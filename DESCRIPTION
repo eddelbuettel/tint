@@ -1,10 +1,14 @@
 Package: tint
 Type: Package
 Title: 'tint' is not 'Tufte'
-Version: 0.1.0
-Date: 2018-04-08
-Author: Dirk Eddelbuettel
-Maintainer: Dirk Eddelbuettel <edd@debian.org>
+Version: 0.1.0.9000
+Date: 2018-11-20
+Authors@R: 
+  c(person("Dirk", "Eddelbuettel", role = c("cre", "aut"), 
+           email = "edd@debian.org"),
+    person("Jonathan", "Gilligan", role = c("aut"),
+           email = "jonathan.gilligan@gmail.com", 
+           comment = c(ORCID="0000-0003-1375-6686")))
 Description: A 'tufte'-alike style for 'rmarkdown'.
 URL: http://dirk.eddelbuettel.com/code/tint.html
 BugReports: https://github.com/eddelbuettel/tint/issues

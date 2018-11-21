@@ -14,7 +14,7 @@
     * inst/rmarkdown/templates/tintBoot/resources/tintBook-template.tex:
       Same.
 
-    * DESCRIPTION: updated Roxygen2 version
+    * DESCRIPTION: Add myself as a co-author, bump version number.
 
     * man/Custom-templates.Rd: New documentation for using custom templates.
     * man/YAML-metadata.Rd: New documentation on new YAML style options.
