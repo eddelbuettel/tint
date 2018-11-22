@@ -1,4 +1,4 @@
-\documentclass[$if(fontsize)$$fontsize$,$endif$$if(lang)$$lang$,$endif$$if(papersize)$$papersize$,$endif$$for(classoption)$$classoption$$sep$,$endfor$]{$documentclass$}
+\documentclass[$if(fontsize)$$fontsize$,$endif$$if(lang)$$lang$,$endif$$if(papersize)$$papersize$,$endif$$if(defaultfonts)$fonts,$else$nofonts,$endif$$for(classoption)$$classoption$$sep$,$endfor$]{$documentclass$}
 
 % ams
 \usepackage{amssymb,amsmath}
@@ -121,12 +121,26 @@ $endif$
 
 %% -- tint overrides
 %% fonts, using roboto (condensed) as default
+$if(defaultfonts)$
+% Using default fonts.
+$else$
+$if(latexfonts)$
+$if(latexfonts.include)$
+\input{$latexfonts.include$}
+$else$
+$for(latexfonts)$
+\usepackage$if(latexfonts.options)$[$for(latexfonts.options)$$latexfonts.options$$sep$,$endfor$]$endif${$if(latexfonts.package)$$latexfonts.package$$else$$latexfonts$$endif$}
+$endfor$
+$endif$
+$else$
 \usepackage[sfdefault,condensed]{roboto}
 %% also nice: \usepackage[default]{lato}
+$endif$
+$endif$
 
 %% colored links, setting 'borrowed' from RJournal.sty with 'Thanks, Achim!'
 \RequirePackage{color}
-\definecolor{link}{rgb}{0.1,0.1,0.8} %% blue with some grey
+\definecolor{link}{rgb}{$if(linkcolor)$$for(linkcolor)$$linkcolor$$sep$,$endfor$$else$0.1,0.1,0.8$endif$} %% blue with some grey
 \hypersetup{
   colorlinks,%
   citecolor=link,%

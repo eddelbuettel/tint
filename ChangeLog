@@ -1,3 +1,25 @@
+2018-11-20 Jonathan Gilligan <jonathan.gilligan@gmail.com>
+
+    * R/pdf.R: 
+        * Added options for user-specified LaTeX templates in YAML block to 
+          override the built-in ones for tintPdf and tintBook;
+        * Made YAML output option latex_engine work correctly.
+        * Added documentation for new capabilities with YAML style options
+          and custom LaTeX templates.
+
+    * R/html.R: Updated documentation for tint* functions.
+
+    * inst/rmarkdown/templates/tintBoot/resources/tintBook-template.tex:
+      Updated template to allow user-specified fonts and link color.
+    * inst/rmarkdown/templates/tintBoot/resources/tintBook-template.tex:
+      Same.
+
+    * DESCRIPTION: Add myself as a co-author, bump version number.
+
+    * man/Custom-templates.Rd: New documentation for using custom templates.
+    * man/YAML-metadata.Rd: New documentation on new YAML style options.
+    * man/tintHtml.Rd: Updated documentation on tint* functions.
+
 2018-04-08  Dirk Eddelbuettel  <edd@debian.org>
 
 	* DESCRIPTION (Version, Date): Release 0.1.0

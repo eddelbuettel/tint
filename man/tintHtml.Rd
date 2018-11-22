@@ -15,12 +15,12 @@ tintHtml(...)
 
 tint(...)
 
-tintPdf(fig_width = 4, fig_height = 2.5, fig_crop = TRUE, dev = "pdf",
-  highlight = "tango", citation_package = "natbib",
+tintPdf(fig_width = 4, fig_height = 2.5, fig_crop = TRUE,
+  dev = "pdf", highlight = "tango", citation_package = "natbib",
   latex_engine = "pdflatex", ...)
 
-tintBook(fig_width = 4, fig_height = 2.5, fig_crop = TRUE, dev = "pdf",
-  highlight = "tango", citation_package = "natbib",
+tintBook(fig_width = 4, fig_height = 2.5, fig_crop = TRUE,
+  dev = "pdf", highlight = "tango", citation_package = "natbib",
   latex_engine = "pdflatex", ...)
 
 newthought(text)
@@ -33,9 +33,13 @@ sans_serif(text)
 }
 \arguments{
 \item{...}{Other arguments to be passed to \code{\link{pdf_document}} or
-\code{\link{html_document}} (note you cannot use the \code{template}
-argument in \code{tintPdf} or the \code{theme} argument in
-\code{tintHHtml()}; these arguments have been set internally)}
+ \code{\link{html_document}} 
+ 
+ 
+\strong{Note:} For \code{tintPdf} and \code{tintBook}, you can 
+specify a custom \code{template} argument to replace the default. 
+You \emph{cannot} use the \code{theme} argument in \code{tintHHtml()} 
+because this argument has been set internally.}
 
 \item{fig_width}{Default width (in inches) for figures}
 
@@ -69,10 +73,11 @@ Richard Feynman, but with an updated font choice.
 \details{
 \code{tintHtml} provides the HTML format based on the Tufte CSS
   \url{https://edwardtufte.github.io/tufte-css/} with fonts set according to
-\url{http://nogginfuel.com/envisioned-css/}. \code{tintPdf} provides a similar
-PDF format using the same font family and styling applied to the
-Tufte-LaTeX \url{https://tufte-latex.github.io/tufte-latex/} class. \code{tintBook}
-is a (currently rather experimental) pdf book variant.
+\url{http://nogginfuel.com/envisioned-css/}. 
+\code{tintPdf} provides a similar PDF format using the same font family and 
+styling applied to the Tufte-LaTeX 
+\url{https://tufte-latex.github.io/tufte-latex/} class. 
+\code{tintBook} is a (currently rather experimental) pdf book variant.
 
 \code{newthought()} can be used in inline R expressions in R
   Markdown (e.g. \samp{`r newthought(Some text)`}), and it works for both
@@ -94,4 +99,7 @@ library(tint)
 }
 \references{
 See \url{http://rstudio.github.io/tufte} for an example.
+}
+\seealso{
+\link{Custom-templates}, \link{YAML-metadata}.
 }
