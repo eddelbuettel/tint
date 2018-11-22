@@ -51,6 +51,39 @@ Here is a screenshot of the book format (which was added with release 0.1.0), sh
 
 ![](http://eddelbuettel.github.com/tint/tintBookScreenshot.png)
 
+#### PDF Font Variants
+
+Since release 0.2.0 additional fonts can be specified in the YAML header.  Using the following lines
+in the YAML header 
+
+```yaml
+latexfonts: 
+  - package: newtxmath
+    options: 
+      - cmintegrals
+      - cmbraces
+  - package: ebgaramond-maths
+  - package: nimbusmononarrow
+```
+
+yields output as in the following screenshot of the first two vignette pages:
+
+![](http://eddelbuettel.github.com/tint/tintPDFGaramond.png)
+
+A second example is using 
+
+```yaml
+latexfonts: 
+  - package: lato
+    options: default
+  - package: FiraMono
+linkcolor: "0.3,0.3,0.6"
+```
+
+which also show the `linkcolor` option resulting in
+
+![](http://eddelbuettel.github.com/tint/tintPDFLato.png)
+
 
 ### Status
 
@@ -94,7 +127,7 @@ texlive-pictures
 
 ### Author
 
-Dirk Eddelbuettel, borrowing heavily from JJ and Yihui in
+Dirk Eddelbuettel and Jonathan Gilligan, borrowing heavily from JJ and Yihui in
 [tufte](https://cran.r-project.org/package=tufte), Dave Liepman in the underlying
 [tufte-css](https://github.com/edwardtufte/tufte-css), Jef Lippiat in
 [envisioned css](https://github.com/nogginfuel/envisioned-css) and also relying on the work
@@ -102,5 +135,5 @@ of the [Tufte-LaTeX](https://tufte-latex.github.io/tufte-latex/) authors.
 
 ### License
 
-GPL-3 for my parts and the code from [tufte](https://cran.r-project.org/package=tufte),
+GPL-3 for our parts and the code from [tufte](https://cran.r-project.org/package=tufte),
 mostly MIT for what comes from Dave Liepman and Jef Lippiat.
