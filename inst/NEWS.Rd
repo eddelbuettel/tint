@@ -3,9 +3,18 @@
 \newcommand{\ghpr}{\href{https://github.com/eddelbuettel/tint/pull/#1}{##1}}
 \newcommand{\ghit}{\href{https://github.com/eddelbuettel/tint/issues/#1}{##1}}
 
+\section{Changes in tint version 0.1.1 (2018-11-xx)}{
+  \itemize{
+    \item The two pdf styles have been extended allowing more flexible
+    LaTeX customization particularly for fonts but also link colour.
+    (Jonathan in \ghpr{30})
+    \item Documentation for the HTML style was updates (Jonathan in \ghpr{30}).
+  }
+}
+
 \section{Changes in tint version 0.1.0 (2018-04-08)}{
   \itemize{
-    \item A new template `tintBook` was added.
+    \item A new template `tintBook` was added (\ghpr{25}).
     \item The pdf variants now default to `tango` as the highlighting
     style.
   }
