@@ -1,3 +1,15 @@
+2018-11-24 Jonathan Gilligan <jonathan.gilligan@gmail.com>
+
+    * R/html.R: Fixed obsolete URL.
+    * inst/examples/simpleHtml.Rmd: Idem
+    * inst/examples/simplePdf.Rmd: Idem
+    * inst/rmarkdown/templates/tintBook/skeleton/skeleton.Rmd: Idem
+    * inst/rmarkdown/templates/tintHtml/skeleton/skeleton.Rmd: Idem
+    * inst/rmarkdown/templates/tintPdf/skeleton/skeleton.Rmd: Idem
+    * man/tintHtml.Rd: Idem
+    * vignettes/tintHtml.Rmd: Idem
+    * vignettes/tintPdf.Rmd: Item
+
 2018-11-22  Dirk Eddelbuettel  <edd@debian.org>
 
 	* DESCRIPTION: Addded new co-author, rolled version and date
