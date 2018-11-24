@@ -32,7 +32,7 @@ ggplot(mtcars, aes(wt, mpg)) + geom_point(size=3, aes(colour=factor(cyl))) + the
 [tint](http://github.com/eddelbuettel/tint) is straightforward mix of the (html and pdf
 parts of the) excellent [tufte](https://github.com/rstudio/tufte) package by JJ and Yihui,
 mixed with the [Roboto Condensed](https://fonts.google.com/specimen/Roboto+Condensed) font
-use and color scheme proposed by [envisioned css](http://nogginfuel.com/envisioned-css/)
+use and color scheme proposed by [envisioned css](https://github.com/nogginfuel/envisioned-css)
 plus minor style changes such as removal of _italics_---but otherwise true to the
 wonderful [tufte](https://github.com/rstudio/tufte) package for R---all baked together
 into a small package providing another template.
@@ -70,7 +70,7 @@ If you have any feature requests or find bugs in **tufte**, please do not hesita
 
 This style provides first and second-level headings (that is, `#` and `##`), demonstrated in the next section. You may get unexpected output if you try to use `###` and smaller headings.
 
-`r newthought('In his later books')`^[[Beautiful Evidence](http://www.edwardtufte.com/tufte/books_be)], Tufte starts each section with a bit of vertical space, a non-indented paragraph, and sets the first few words of the sentence in small caps. To accomplish this using this style, call the `newthought()` function in **tufte** in an _inline R expression_ `` `r ` `` as demonstrated at the beginning of this paragraph.^[Note you should not assume **tufte** has been attached to your R session. You should either `library(tufte)` in your R Markdown document before you call `newthought()`, or use `tint::newthought()`.]
+`r newthought('In his later books')`^[[Beautiful Evidence](https://www.edwardtufte.com/tufte/books_be)], Tufte starts each section with a bit of vertical space, a non-indented paragraph, and sets the first few words of the sentence in small caps. To accomplish this using this style, call the `newthought()` function in **tufte** in an _inline R expression_ `` `r ` `` as demonstrated at the beginning of this paragraph.^[Note you should not assume **tufte** has been attached to your R session. You should either `library(tufte)` in your R Markdown document before you call `newthought()`, or use `tint::newthought()`.]
 
 # Figures
 

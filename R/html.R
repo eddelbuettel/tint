@@ -17,7 +17,7 @@
 #'
 #' @details \code{tintHtml} provides the HTML format based on the Tufte CSS
 #'   \url{https://edwardtufte.github.io/tufte-css/} with fonts set according to
-#' \url{http://nogginfuel.com/envisioned-css/}. 
+#' \url{https://github.com/nogginfuel/envisioned-css}. 
 #' \code{tintPdf} provides a similar PDF format using the same font family and 
 #' styling applied to the Tufte-LaTeX 
 #' \url{https://tufte-latex.github.io/tufte-latex/} class. 

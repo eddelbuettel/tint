@@ -18,7 +18,7 @@ options(htmltools.dir.version = FALSE)
 [tint](http://github.com/eddelbuettel/tint) is straightforward mix of the (html and pdf
 parts of the) excellent [tufte](https://github.com/rstudio/tufte) package by JJ and Yihui,
 mixed with the [Roboto Condensed](https://fonts.google.com/specimen/Roboto+Condensed) font
-use and color scheme proposed by [envisioned css](http://nogginfuel.com/envisioned-css/)
+use and color scheme proposed by [envisioned css](https://github.com/nogginfuel/envisioned-css)
 plus minor style changes such as removal of _italics_---but otherwise true to the
 wonderful [tufte](https://github.com/rstudio/tufte) package for R---all baked together
 into a small package providing another template.
