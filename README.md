@@ -1,4 +1,4 @@
-## tint [![Build Status](https://travis-ci.org/eddelbuettel/tint.svg)](https://travis-ci.org/eddelbuettel/tint) [![Package-License](http://img.shields.io/badge/license-GPL--3-brightgreen.svg?style=flat)](http://www.gnu.org/licenses/gpl-3.0.html) [![CRAN](http://www.r-pkg.org/badges/version/tint)](https://cran.r-project.org/package=tint) [![Downloads](http://cranlogs.r-pkg.org/badges/tint?color=brightgreen)](http://www.r-pkg.org/pkg/tint)
+## tint [![Build Status](https://travis-ci.org/eddelbuettel/tint.svg)](https://travis-ci.org/eddelbuettel/tint) [![Package-License](http://img.shields.io/badge/license-GPL--3-brightgreen.svg?style=flat)](http://www.gnu.org/licenses/gpl-3.0.html) [![CRAN](http://www.r-pkg.org/badges/version/tint)](https://cran.r-project.org/package=tint) [![Dependencies](https://tinyverse.netlify.com/badge/tint)](https://cran.r-project.org/package=tint) [![Downloads](http://cranlogs.r-pkg.org/badges/tint?color=brightgreen)](http://www.r-pkg.org/pkg/tint)
 
 Tint is not Tufte
 
