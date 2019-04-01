@@ -1,7 +1,16 @@
+2019-03-30  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version, Date): Release 0.1.1
+
+	* inst/examples/tintPDFGaramond.Rmd: Added example
+	* inst/examples/tintPDFGaramond.pdf: Idem
+	* inst/examples/tintPDFLato.Rmd: Idem
+	* inst/examples/tintPDFLato.pdf: Idem
+
 2019-03-29  Dirk Eddelbuettel  <edd@debian.org>
 
 	* README.md: Add dependency badge
-	
+
 2018-11-24  Jonathan Gilligan  <jonathan.gilligan@gmail.com>
 
 	* R/html.R: Fixed obsolete URL
@@ -13,7 +22,7 @@
 	* man/tintHtml.Rd: Idem
 	* vignettes/tintHtml.Rmd: Idem
 	* vignettes/tintPdf.Rmd: Item
-	
+
 2018-11-22  Dirk Eddelbuettel  <edd@debian.org>
 
 	* DESCRIPTION: Addded new co-author, rolled version and date

@@ -1,8 +1,8 @@
 Package: tint
 Type: Package
 Title: 'tint' is not 'Tufte'
-Version: 0.1.0.2
-Date: 2018-11-22
+Version: 0.1.1
+Date: 2019-03-30
 Author: Dirk Eddelbuettel and Jonathan Gilligan
 Maintainer: Dirk Eddelbuettel <edd@debian.org>
 Description: A 'tufte'-alike style for 'rmarkdown'.
@@ -12,4 +12,5 @@ Imports: htmltools, knitr, rmarkdown
 Suggests: ggplot2
 VignetteBuilder: knitr
 License: GPL-3
-RoxygenNote: 6.0.1
+RoxygenNote: 6.1.1
+Encoding: UTF-8
