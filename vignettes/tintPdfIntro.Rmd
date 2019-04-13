@@ -141,7 +141,7 @@ details. In contrast to the [default Roboto
 variant](https://eddelbuettel.github.io/tint/tintPDF.pdf), the [Lato
 variant](https://eddelbuettel.github.io/tint/tintPDFLato.pdf) uses
 
-```{r fig-lato-screenshot, fig.margin=TRUE, fig.width=4, fig.height=4, cache=TRUE, echo=FALSE}
+```{r fig-lato-screenshot, fig.margin=TRUE, cache=TRUE, echo=FALSE}
 knitr::include_graphics("figures/tintLatoP1.png", dpi = NA)
 ```
 ```yaml
@@ -165,7 +165,7 @@ latexfonts:
   - package: nimbusmononarrow
 ```
 
-```{r fig-garamond-screenshot, fig.margin=TRUE, fig.width=4.25, fig.height=5.5, cache=TRUE, echo=FALSE}
+```{r fig-garamond-screenshot, fig.margin=TRUE, cache=TRUE, echo=FALSE}
 knitr::include_graphics("figures/TintGaramondP1.png", dpi = NA)
 ```
 
