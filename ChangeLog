@@ -4,6 +4,9 @@
 
 	* vignettes/tintPdfIntro.Rmd: New shorter vignette
 
+	* inst/examples/tintPDF.Rmd: Moved from vignettes/
+	* inst/examples/tintHTML.Rmd: Idem
+
 2019-04-09  Dirk Eddelbuettel  <edd@debian.org>
 
 	* inst/rmarkdown/templates/tintPdf/resources/tintPdf-template.tex:
