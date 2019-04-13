@@ -141,6 +141,9 @@ details. In contrast to the [default Roboto
 variant](https://eddelbuettel.github.io/tint/tintPDF.pdf), the [Lato
 variant](https://eddelbuettel.github.io/tint/tintPDFLato.pdf) uses
 
+```{r fig-lato-screenshot, fig.margin=TRUE, fig.width=4, fig.height=4, cache=TRUE, echo=FALSE}
+knitr::include_graphics("figures/tintLatoP1.png", dpi = NA)
+```
 ```yaml
 latexfonts: 
   - package: lato
@@ -148,6 +151,7 @@ latexfonts:
   - package: FiraMono
 linkcolor: "0.3,0.3,0.6"
 ```
+
 
 The [Garamond variant](https://eddelbuettel.github.io/tint/tintPDFGaramond.pdf) uses
 
@@ -161,6 +165,10 @@ latexfonts:
   - package: nimbusmononarrow
 ```
 
+```{r fig-garamond-screenshot, fig.margin=TRUE, fig.width=4.25, fig.height=5.5, cache=TRUE, echo=FALSE}
+knitr::include_graphics("figures/TintGaramondP1.png", dpi = NA)
+```
+
 This requires the fonts to be installed on the system on which the document is
 prepared. How to install additional fonts is beyond the scope of this note, see platform
 and font-specific help.
@@ -171,7 +179,7 @@ and font-specific help.
 
 One can use Pandoc-style citations using the the Bibtext citation identifier inside of
 square brackets: `[@someone:1984]`. Alternatively, the standard `natbib` features are
-available such as `\citet{}`, \citep{}` and more.
+available such as `\citet{}`, `\citep{}` and more.
 
 ## Code
 
