@@ -2,12 +2,11 @@
 title: "Tint Is Not Tufte: Brief Intro"
 author: "Dirk Eddelbuettel and Jonathan Gilligan"
 date: "`r Sys.Date()`"
-output: tint::tintPdf
-bibliography: tint.bib
+output: tint::tintHtml
 link-citations: yes
 
 vignette: >
-  %\VignetteIndexEntry{Short tint PDF Example}
+  %\VignetteIndexEntry{Short tint HTML Example}
   %\VignetteKeywords{tint,vignette}
   %\VignettePackage{tint}
   %\VignetteEngine{knitr::rmarkdown}
@@ -36,13 +35,6 @@ theme_tint <- function(base_size = 11, ticks = TRUE) {
   ret
 }
 mtcars$am <- factor(mtcars$am, labels=c("manual", "automatic"))
-## download files
-latofile <- file.path(tempdir(), "tintPdfLatoPage1.pdf")
-garamondfile <- file.path(tempdir(), "tintPdfGaramondPage1.pdf")
-download.file("https://eddelbuettel.github.io/tint/tintPdfLatoPage1.pdf",
-              latofile, quiet = TRUE)
-download.file("https://eddelbuettel.github.io/tint/tintPdfGaramondPage1.pdf",
-              garamondfile, quiet = TRUE)
 ```
 
 # An Introduction to `tint`
@@ -149,7 +141,7 @@ variant](https://eddelbuettel.github.io/tint/tintPDF.pdf), the [Lato
 variant](https://eddelbuettel.github.io/tint/tintPDFLato.pdf) uses
 
 ```{r fig-lato-screenshot, fig.margin=TRUE, cache=TRUE, echo=FALSE}
-knitr::include_graphics(latofile, dpi = NA)
+knitr::include_graphics("https://eddelbuettel.github.io/tint/tintPdfLatoPage1.png", dpi = NA)
 ```
 
 ```yaml
@@ -174,7 +166,7 @@ latexfonts:
 ```
 
 ```{r fig-garamond-screenshot, fig.margin=TRUE, cache=TRUE, echo=FALSE}
-knitr::include_graphics(garamondfile, dpi = NA)
+knitr::include_graphics("https://eddelbuettel.github.io/tint/tintPdfGaramondPage1.png", dpi = NA)
 ```
 
 This requires the fonts to be installed on the system on which the document is
