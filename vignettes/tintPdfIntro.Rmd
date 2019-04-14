@@ -142,8 +142,9 @@ variant](https://eddelbuettel.github.io/tint/tintPDF.pdf), the [Lato
 variant](https://eddelbuettel.github.io/tint/tintPDFLato.pdf) uses
 
 ```{r fig-lato-screenshot, fig.margin=TRUE, cache=TRUE, echo=FALSE}
-knitr::include_graphics("figures/tintLatoP1.png", dpi = NA)
+knitr::include_graphics("https://eddelbuettel.github.io/tint/tintPdfLatoPage1.png", dpi = NA)
 ```
+
 ```yaml
 latexfonts: 
   - package: lato
@@ -166,7 +167,7 @@ latexfonts:
 ```
 
 ```{r fig-garamond-screenshot, fig.margin=TRUE, cache=TRUE, echo=FALSE}
-knitr::include_graphics("figures/TintGaramondP1.png", dpi = NA)
+knitr::include_graphics("https://eddelbuettel.github.io/tint/tintPdfGaramondPage1.png", dpi = NA)
 ```
 
 This requires the fonts to be installed on the system on which the document is
