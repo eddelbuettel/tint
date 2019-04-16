@@ -1,0 +1,196 @@
+---
+title: "Tint Is Not Tufte: Brief Intro"
+author: "Dirk Eddelbuettel and Jonathan Gilligan"
+date: "`r Sys.Date()`"
+output: tint::tintHtml
+link-citations: yes
+
+vignette: >
+  %\VignetteIndexEntry{Short tint HTML Example}
+  %\VignetteKeywords{tint,vignette}
+  %\VignettePackage{tint}
+  %\VignetteEngine{knitr::rmarkdown}
+---
+
+```{r setup, include=FALSE}
+library(tint)
+library(ggplot2)
+theme_tint <- function(base_size = 11, ticks = TRUE) {
+  ret <- theme_bw(base_size = base_size) +
+    theme(
+      plot.caption = element_text(hjust = 0),
+      legend.background = element_blank(),
+      legend.key = element_blank(),
+      panel.background = element_blank(),
+      panel.border = element_blank(),
+      strip.background = element_blank(),
+      plot.background = element_blank(),
+      axis.line = element_blank(),
+      panel.grid = element_blank(),
+      legend.position = "bottom" 
+    )
+  if (!ticks) {
+    ret <- ret + theme(axis.ticks = element_blank())
+  }
+  ret
+}
+mtcars$am <- factor(mtcars$am, labels=c("manual", "automatic"))
+```
+
+# An Introduction to `tint`
+
+[tint](http://github.com/eddelbuettel/tint) \citep{cran:tint} updates the look and feel of
+'Tufte' documents for R. It combines the (html and pdf parts of the) excellent
+[tufte](https://github.com/rstudio/tufte) package \citep{cran:tufte} with the [Roboto
+Condensed](https://fonts.google.com/specimen/Roboto+Condensed) font use and color scheme
+proposed by [envisioned css](https://github.com/nogginfuel/envisioned-css) plus minor
+style changes such as removal of _italics_---but remains otherwise true to the
+[tufte](https://github.com/rstudio/tufte) package for R.  Later additions are a book style
+and well as generalisation of the font handling allowing for
+[Lato](http://www.latofonts.com/lato-free-fonts/) and
+[Garamond](https://fonts.adobe.com/fonts/adobe-garamond) fonts along with extended color
+selection.
+
+```{r fig-nocap-margin-first, fig.margin=TRUE, fig.width=4, fig.height=4, cache=TRUE, echo=FALSE}
+ggplot(mtcars, aes(wt, mpg)) + geom_point(size=3, aes(colour=factor(cyl))) +
+    theme(legend.position="none")
+```
+
+The package name follows an old tradition and is recursive: _tint is not tufte_.
+
+Full documentation is available in the [longer PDF
+vignette](https://eddelbuettel.github.io/tint/tintPDF.pdf), its
+[Lato](https://eddelbuettel.github.io/tint/tintPDFLato.pdf) and
+[Garamond](https://eddelbuettel.github.io/tint/tintPDFGaramond.pdf) variants (see below)
+as well as the [longer HTML vignette](https://eddelbuettel.github.io/tint/tintHTML.html).
+As these render to about two megabytes each, we no longer include them by default in the
+package as it swells the size of the installed package unnecessarily.
+
+# Margin Examples
+
+The margin can be used for arbirtrary 'figure' environments by using the `knitr` option
+`marginfigure` along with standard \LaTeX mathematical markup.
+
+```{marginfigure}
+We know from _the first fundamental theorem of calculus_ that for $x$ in $[a, b]$:
+$$\frac{d}{dx}\left( \int_{a}^{x} f(u)\,du\right)=f(x).$$
+```
+
+We can also add a 'note' using the standard `pandoc` notation of text in square brackets
+following an hat symbol: `^[text here]`.^[This is a sidenote that was entered using a
+footnote.]
+
+Notes can also be added in-line using an R command and the `margin_note()` function. 
+`r margin_note("Some text.")` Note that this note is unnumbered.
+
+# Margin Figures
+
+One feature of the [tint](http://github.com/eddelbuettel/tint) /
+[tufte](https://github.com/rstudio/tufte) packages are margin figure such as the first one
+on the right. It was created by setting the `knitr` option `fig.margin=TRUE`; the plotting
+code itself is standard.
+
+```r
+ggplot(mtcars, aes(wt, mpg)) +
+    geom_point(size=3, aes(colour=factor(cyl))) +
+    theme(legend.position="none")
+```
+
+
+```{r fig-nocap-margin-second, fig.margin=TRUE, fig.width=4, fig.height=4, cache=TRUE, echo=FALSE}
+ggplot(mtcars, aes(wt, mpg)) + geom_point(size=3, aes(colour=factor(cyl))) +
+    theme_tint() + theme(legend.position="none")
+```
+
+Charts can also take advantage of the `theme_tint()` we added; it owes a lot to a similar
+function in the [ggtufte](https://github.com/jrnold/ggtufte) package
+\citep{github:ggtufte} (but which conflicts in its font settings with our, so we
+simplified). Its effect can be seen in the second figure. Note that the legend-suppression
+has to come after `theme_tint()` as changes are additive.
+
+
+
+# Full Width Figures
+
+Figures can span across the entire page; this is enabled by using the chunk option
+`fig.fullwidth = TRUE`. Using the default them but conditioning by number of cylinders:
+
+```{r fig-fullwidth, fig.width = 10, fig.height = 3, fig.fullwidth = TRUE, fig.cap = "A full width figure.", echo=FALSE, cache=TRUE}
+ggplot(mtcars, aes(wt, mpg)) + geom_point(size=3, aes(colour=am)) + facet_wrap(~ factor(cyl)) +
+    theme(legend.position="bottom")
+```
+
+# Main Column Figures
+
+Besides margin and full width figures, one can of course also include figures constrained
+to the main column. This is the default type of figures in the LaTeX/HTML output. A single
+figure with cylinders in color and transmission not controlled for, and once again using
+`theme_tint()`:
+
+```{r fig-main, fig.cap = "A figure in the main column.", cache=TRUE, echo=FALSE}
+ggplot(mtcars, aes(wt, mpg)) +
+    geom_point(size=2, aes(colour=factor(cyl))) +
+    theme_tint() + theme(legend.position="none")
+```
+
+# Font Extensions
+
+Since version 0.1.1, the Lato and Garamond font families can be used.  See the package for
+details. In contrast to the [default Roboto
+variant](https://eddelbuettel.github.io/tint/tintPDF.pdf), the [Lato
+variant](https://eddelbuettel.github.io/tint/tintPDFLato.pdf) uses
+
+```{r fig-lato-screenshot, fig.margin=TRUE, cache=TRUE, echo=FALSE}
+knitr::include_graphics("https://eddelbuettel.github.io/tint/tintPdfLatoPage1.png", dpi = NA)
+```
+
+```yaml
+latexfonts: 
+  - package: lato
+    options: default
+  - package: FiraMono
+linkcolor: "0.3,0.3,0.6"
+```
+
+
+The [Garamond variant](https://eddelbuettel.github.io/tint/tintPDFGaramond.pdf) uses
+
+```yaml
+latexfonts: 
+  - package: newtxmath
+    options: 
+      - cmintegrals
+      - cmbraces
+  - package: ebgaramond-maths
+  - package: nimbusmononarrow
+```
+
+```{r fig-garamond-screenshot, fig.margin=TRUE, cache=TRUE, echo=FALSE}
+knitr::include_graphics("https://eddelbuettel.github.io/tint/tintPdfGaramondPage1.png", dpi = NA)
+```
+
+This requires the fonts to be installed on the system on which the document is
+prepared. How to install additional fonts is beyond the scope of this note, see platform
+and font-specific help.
+
+# Citations, Code, Tables and More
+
+## Citations
+
+One can use Pandoc-style citations using the the Bibtext citation identifier inside of
+square brackets: `[@someone:1984]`. Alternatively, the standard `natbib` features are
+available such as `\citet{}`, `\citep{}` and more.
+
+## Code
+
+The package, just like any other `pandoc`-driven use of markdown, can also typset code
+directly.  We showed this above with the `ggplot()` example (using R formatting) and the
+font declarations (using YAML formatting).
+
+## Tables
+
+As [knitr](https://github.com/yihui/knitr)
+\citep{cran:knitr} is driving the conversion, many of its options also apply.  See the
+documentation for the [tufte](https://github.com/rstudio/tufte) and
+[knitr](https://github.com/yihui/knitr) for details.
+

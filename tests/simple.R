@@ -10,14 +10,7 @@ if (isTRUE(unname(Sys.info()["sysname"]) %in% c("Linux","Windows"))) {
 }
 
 ## pdf requires a fairly complete latex installation so make this conditional
-if (isTRUE(unname(Sys.info()["user"])=="edd")) {
-    file.copy(system.file("examples", "simplePdf.Rmd", package="tint"), "simplePdf.Rmd")
-    rmarkdown::render("simplePdf.Rmd")
-}
-
-
-
-
-
-
-
+#if (isTRUE(unname(Sys.info()["user"])=="edd")) {
+#    file.copy(system.file("examples", "simplePdf.Rmd", package="tint"), "simplePdf.Rmd")
+#    rmarkdown::render("simplePdf.Rmd")
+#}

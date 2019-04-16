@@ -1,3 +1,20 @@
+2019-04-14  Dirk Eddelbuettel  <edd@debian.org>
+
+	* vignettes/tintHtmlIntro.Rmd: New shorter vignette
+
+	* cleanup: Added
+
+2019-04-13  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version, Date): Roll minor version
+
+	* vignettes/tintPdfIntro.Rmd: New shorter vignette
+
+	* inst/examples/tintPDF.Rmd: Moved from vignettes/
+	* inst/examples/tintHTML.Rmd: Idem
+
+	* tests/simple.R: Pause local pdf test
+
 2019-04-09  Dirk Eddelbuettel  <edd@debian.org>
 
 	* inst/rmarkdown/templates/tintPdf/resources/tintPdf-template.tex:

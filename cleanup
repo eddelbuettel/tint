@@ -1,0 +1,6 @@
+#!/bin/bash
+
+rm -rf vignettes/tint{Html,Pdf}Intro_cache \
+   vignettes/tint{Html,Pdf}Intro_files \
+   vignettes/tintPdfIntro.log
+
