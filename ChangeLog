@@ -1,3 +1,11 @@
+2019-04-17  Dirk Eddelbuettel  <edd@debian.org>
+
+	* R/isConnected.R (.isConnected): New helper function (to check network
+	access) borrowed from our dang package
+
+	* R/utils.R: More explicit copyright header
+	* R/utilsKnitr.R: Idem
+
 2019-04-14  Dirk Eddelbuettel  <edd@debian.org>
 
 	* vignettes/tintHtmlIntro.Rmd: New shorter vignette
