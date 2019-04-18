@@ -6,6 +6,10 @@ Date: 2019-04-13
 Author: Dirk Eddelbuettel and Jonathan Gilligan
 Maintainer: Dirk Eddelbuettel <edd@debian.org>
 Description: A 'tufte'-alike style for 'rmarkdown'.
+ A modern take on the 'Tufte' design for pdf and html vignettes,
+ building on the 'tufte' package with additional contributions
+ from the 'knitr' and 'ggtufte' package, and also acknowledging
+ the key influence of 'envisioned css'.
 URL: http://dirk.eddelbuettel.com/code/tint.html
 BugReports: https://github.com/eddelbuettel/tint/issues
 Imports: htmltools, knitr, rmarkdown

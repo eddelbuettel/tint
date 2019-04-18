@@ -21,7 +21,7 @@ make it an [RMarkdown](http://rmarkdown.rstudio.com/) template you can use just 
 package. Among the small changes I made were the removal of _italics_ in subheaders and the title.
 
 Similarly, LaTeX styles exists and the
-[tufte](https://cran.r-project.org/package=tufte) supports both pdf
+[tufte](https://cran.r-project.org/package=tufte) package supports both pdf
 handouts and a book format.  We first supported the pdf handout
 output only, and added support for a pdf book format in release 0.1.0.
 

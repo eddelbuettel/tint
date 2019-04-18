@@ -7,6 +7,8 @@
   \itemize{
     \item Two new shorter html and pdf vignettes have been added (with
     references to the longer vignettes) reducing package size.
+    \item New helper function 'theme_tint' based on a similar function
+    in package 'ggtufte'.
   }
 }
     

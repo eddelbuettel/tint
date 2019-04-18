@@ -1,7 +1,13 @@
 2019-04-17  Dirk Eddelbuettel  <edd@debian.org>
 
+	* DESCRIPTION (Description): Expanded Description
+
 	* R/isConnected.R (.isConnected): New helper function (to check network
 	access) borrowed from our dang package
+
+	* R/theme.R (theme_tint): New helper function for 'theme_tint' based
+	a similar function in 'ggtufte' by Jeffrey Arnold
+	* man/theme_tint.Rd: Documentation
 
 	* R/utils.R: More explicit copyright header
 	* R/utilsKnitr.R: Idem

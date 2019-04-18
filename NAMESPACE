@@ -1,3 +1,4 @@
-export(tint, margin_note, newthought, quote_footer, sans_serif, tintHtml, tintPdf, tintBook)
+export(tint, margin_note, newthought, quote_footer, sans_serif,
+       theme_tint, tintHtml, tintPdf, tintBook)
 importFrom(htmltools,htmlDependency)
 
