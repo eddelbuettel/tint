@@ -7,8 +7,8 @@
 Using YAML metadata to customize PDF documents.
 }
 \details{
-You can easily customize fonts and a few other style attributes of  
-PDF documents (\code{tintPdf} and \code{tintBook}) with 
+You can easily customize fonts and a few other style attributes of
+PDF documents (\code{tintPdf} and \code{tintBook}) with
 YAML metadata
 }
 \section{Changing the fonts}{
@@ -34,9 +34,9 @@ sans serif, and Fira Sans Mono for typewriter.
 
 You can also pass options to the packages:
 \preformatted{
-latexfonts: 
+latexfonts:
   - package: newtxmath
-    options: 
+    options:
       - cmintegrals
       - cmbraces
   - package: ebgaramond-maths
@@ -51,12 +51,12 @@ The default for tint is to use the equivalent of
 \preformatted{
 latexfonts:
   - package: roboto
-    options: 
+    options:
       - sfdefault
       - condensed
 }
 where \code{sfdefault} specifies that the default text font should be Roboto.
-Other packages use different options, such as Lato, another sans-serif 
+Other packages use different options, such as Lato, another sans-serif
 font, which you would specify as the main font like this:
 \preformatted{
 latexfonts:
@@ -71,7 +71,7 @@ latexfonts:
 Changing the link color
 
 By default, tint uses a grayish-blue color for hyperlinks. If you want to
-change this, you can use the YAML \code{linkcolor} variable either as a 
+change this, you can use the YAML \code{linkcolor} variable either as a
 string with three numbers (red, green, and blue) separated by commas:
 \preformatted{
 linkcolor: "0.3,0.3,0.6"

@@ -3,8 +3,8 @@
 ## conflict with the tint settings
 ##
 ## Copyright Jeffey Arnold
-## Licensed as GPL-3
-## https://cran.r-project.org/package=tufte
+## Licensed as MIT
+## https://github.com/jrnold/ggtufte
 
 
 ##' A 'Tufte'-inspired 'ggplot2' theme for the 'tint' package
@@ -20,19 +20,24 @@
 ##' @return A modified theme for ggplot2 use
 ##' @author Dirk Eddelbuettel modifying earlier work by Jeffrey Arnold
 theme_tint <- function(base_size = 11, ticks = TRUE) {
-    ret <- ggplot2::theme_bw(base_size = base_size) +
-        ggplot2::theme(plot.caption = ggplot2::element_text(hjust = 0),
-                       legend.background = ggplot2::element_blank(),
-                       legend.key = ggplot2::element_blank(),
-                       panel.background = ggplot2::element_blank(),
-                       panel.border = ggplot2::element_blank(),
-                       strip.background = ggplot2::element_blank(),
-                       plot.background = ggplot2::element_blank(),
-                       axis.line = ggplot2::element_blank(),
-                       panel.grid = ggplot2::element_blank(),
-                       legend.position = "bottom")
-    if (!ticks) {
-        ret <- ret + ggplot2::theme(axis.ticks = ggplot2::element_blank())
+    if (requireNamespace("ggplot2", quietly=TRUE)) {
+        ret <- ggplot2::theme_bw(base_size = base_size) +
+            ggplot2::theme(plot.caption = ggplot2::element_text(hjust = 0),
+                           legend.background = ggplot2::element_blank(),
+                           legend.key = ggplot2::element_blank(),
+                           panel.background = ggplot2::element_blank(),
+                           panel.border = ggplot2::element_blank(),
+                           strip.background = ggplot2::element_blank(),
+                           plot.background = ggplot2::element_blank(),
+                           axis.line = ggplot2::element_blank(),
+                           panel.grid = ggplot2::element_blank(),
+                           legend.position = "bottom")
+        if (!ticks) {
+            ret <- ret + ggplot2::theme(axis.ticks = ggplot2::element_blank())
+        }
+        ret
+    } else {
+        warning("You need 'ggplot2' installed to call 'theme_tint'.")
+        NULL
     }
-    ret
 }

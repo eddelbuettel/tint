@@ -1,28 +1,41 @@
+## This file contains modified and updated portions of code imported
+## from the tufte package by Yihui Xie and JJ Allaire
+##
+## Copyright Yihui Xie, JJ Allaire et al
+## Licensed as GPL-3
+## https://cran.r-project.org/package=tufte
+
+
+
 #' Tint Is Not Tufte -- A Tufte-Inspired HTML Format
 #'
-#' A template for creating html reports according to the style of Edward R. Tufte and
-#' Richard Feynman, but with an updated font choice.
+#' A template for creating html reports according to the style of
+#' Edward R. Tufte and Richard Feynman, but with an updated font
+#' choice. The three key functions \code{tintHtml}, \code{tintPdf}
+#' and \code{tintBook} offer, respectively, support for html and
+#' pdf-based shorter (\dQuote{article-length} writeups as well as
+#' support for longer pdf-based content.
 #'
-#' @param ... Other arguments to be passed to \code{\link{pdf_document}} or
-#'   \code{\link{html_document}} 
-#'   
-#'   
-#'  \strong{Note:} For \code{tintPdf} and \code{tintBook}, you can 
-#'  specify a custom \code{template} argument to replace the default. 
-#'  You \emph{cannot} use the \code{theme} argument in \code{tintHHtml()} 
-#'  because this argument has been set internally.
-#'  
-#' @references See \url{http://rstudio.github.io/tufte} for an example.
-#' @examples library(tint)
+#' @param ... Other arguments to be passed to
+#' \code{\link{pdf_document}} or \code{\link{html_document}}
+#'
+#' \strong{Note:} For \code{tintPdf} and \code{tintBook}, you can
+#' specify a custom \code{template} argument to replace the default.
+#' You \emph{cannot} use the \code{theme} argument in \code{tintHHtml()}
+#' because this argument has been set internally.
 #'
 #' @details \code{tintHtml} provides the HTML format based on the Tufte CSS
 #'   \url{https://edwardtufte.github.io/tufte-css/} with fonts set according to
-#' \url{https://github.com/nogginfuel/envisioned-css}. 
-#' \code{tintPdf} provides a similar PDF format using the same font family and 
-#' styling applied to the Tufte-LaTeX 
-#' \url{https://tufte-latex.github.io/tufte-latex/} class. 
-#' \code{tintBook} is a (currently rather experimental) pdf book variant.
-#' 
+#' \url{https://github.com/nogginfuel/envisioned-css}.
+#' \code{tintPdf} provides a similar PDF format using the same font family and
+#' styling applied to the Tufte-LaTeX
+#' \url{https://tufte-latex.github.io/tufte-latex/} class.
+#' \code{tintBook} is a (still somewhat experimental) pdf book variant.
+#'
+#' @references See \url{http://rstudio.github.io/tufte} for the
+#' \pkg{tufte} package this was initially derived from. See
+#' \url{http://eddelbuettel.github.io/tint} for usage examples
+#' from this package.
 #' @seealso \link{Custom-templates}, \link{YAML-metadata}.
 tintHtml <- function(...) {
 

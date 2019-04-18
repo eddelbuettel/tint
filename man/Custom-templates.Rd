@@ -11,24 +11,24 @@ If you want to make more significant changes to the document styles,
 you can make custom Pandoc templates, using the examples provided with
 this package.
 
-You will need to have some expertise with LaTeX to do this, but you 
-can take the templates, such as \code{tintPdf-template.tex} 
+You will need to have some expertise with LaTeX to do this, but you
+can take the templates, such as \code{tintPdf-template.tex}
 or \code{tintBook-template.tex}, which you can locate on your computer with
 \preformatted{
-system.file("rmarkdown", "templates", "tintPdf", "resources", 
+system.file("rmarkdown", "templates", "tintPdf", "resources",
             "tintPdf-template.tex", package="tint")
 }
-and 
+and
 \preformatted{
-system.file("rmarkdown", "templates", "tintBook", "resources", 
+system.file("rmarkdown", "templates", "tintBook", "resources",
             "tintBook-template.tex", package="tint")
 }
 
 Copy those files to the folder where your RMarkdown file is located and edit them and then
 tell tint to use your custom template instead of its built-in ones by using
-the YAML attribute \code{template} in your \code{output} block: 
+the YAML attribute \code{template} in your \code{output} block:
 \preformatted{
-output: 
+output:
   tint::tintPdf:
     template: "my-custom-template.tex"
 }

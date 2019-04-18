@@ -1,3 +1,20 @@
+2019-04-18  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version, Date): Roll minor version
+
+	* vignettes/tintHtmlIntro.Rmd (author): Updated to use package
+	version of theme_tint and check for connectedness
+	* vignettes/tintPdfIntro.Rmd: Idem
+
+	* R/theme.R (theme_tint): Now conditional on ggplot2 installed
+
+	* R/pdf.R: Added copyright header, small edits to roxygen docs
+	* R/html.R: Idem
+
+	* man/tintHtml.Rd: Updated
+	* man/Custom-templates.Rd: Idem
+	* man/YAML-metadata.Rd: Idem
+
 2019-04-17  Dirk Eddelbuettel  <edd@debian.org>
 
 	* DESCRIPTION (Description): Expanded Description
@@ -11,6 +28,8 @@
 
 	* R/utils.R: More explicit copyright header
 	* R/utilsKnitr.R: Idem
+
+	* README.md: Minor edit
 
 2019-04-14  Dirk Eddelbuettel  <edd@debian.org>
 
