@@ -3,7 +3,7 @@
 \newcommand{\ghpr}{\href{https://github.com/eddelbuettel/tint/pull/#1}{##1}}
 \newcommand{\ghit}{\href{https://github.com/eddelbuettel/tint/issues/#1}{##1}}
 
-\section{Changes in tint version 0.1.2 (2019-04-xx)}{
+\section{Changes in tint version 0.1.2 (2019-04-19)}{
   \itemize{
     \item Two new shorter html and pdf vignettes have been added (with
     references to the longer vignettes) reducing package size.
