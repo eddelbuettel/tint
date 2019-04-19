@@ -15,6 +15,9 @@
 	* man/Custom-templates.Rd: Idem
 	* man/YAML-metadata.Rd: Idem
 
+	* R/utils.R: Marked sans_serif() via .Deprecated() as a candidate
+	for removal.
+
 2019-04-17  Dirk Eddelbuettel  <edd@debian.org>
 
 	* DESCRIPTION (Description): Expanded Description

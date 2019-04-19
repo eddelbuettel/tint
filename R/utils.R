@@ -57,6 +57,8 @@ quote_footer = function(text) {
 #' @details \code{sans_serif()} applies sans-serif fonts to \code{text}.
 #' @rdname tintHtml
 sans_serif = function(text) {
+    .Deprecated(msg=paste("Function 'sans_serif' not applicable for package 'tint'.",
+                          "It may be removed in a future release."))
   if (is_html_output()) {
     sprintf('<span class="sans">%s</span>', text)
   } else if (is_latex_output()) {
