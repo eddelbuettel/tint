@@ -15,26 +15,18 @@ vignette: >
 ```{r setup, include=FALSE}
 library(tint)
 library(ggplot2)
-theme_tint <- function(base_size = 11, ticks = TRUE) {
-  ret <- theme_bw(base_size = base_size) +
-    theme(
-      plot.caption = element_text(hjust = 0),
-      legend.background = element_blank(),
-      legend.key = element_blank(),
-      panel.background = element_blank(),
-      panel.border = element_blank(),
-      strip.background = element_blank(),
-      plot.background = element_blank(),
-      axis.line = element_blank(),
-      panel.grid = element_blank(),
-      legend.position = "bottom" 
-    )
-  if (!ticks) {
-    ret <- ret + theme(axis.ticks = element_blank())
-  }
-  ret
-}
 mtcars$am <- factor(mtcars$am, labels=c("manual", "automatic"))
+## download files if connected
+connected <- tint:::.isConnected()
+if (connected) {
+    latofile <- file.path(tempdir(), "tintPdfLatoPage1.png")
+    garamondfile <- file.path(tempdir(), "tintPdfGaramondPage1.png")
+    download.file("https://eddelbuettel.github.io/tint/tintPdfLatoPage1.png",
+                  latofile, quiet = TRUE)
+    download.file("https://eddelbuettel.github.io/tint/tintPdfGaramondPage1.png",
+                  garamondfile, quiet = TRUE)
+
+}
 ```
 
 # An Introduction to `tint`
@@ -141,7 +133,7 @@ variant](https://eddelbuettel.github.io/tint/tintPDF.pdf), the [Lato
 variant](https://eddelbuettel.github.io/tint/tintPDFLato.pdf) uses
 
 ```{r fig-lato-screenshot, fig.margin=TRUE, cache=TRUE, echo=FALSE}
-knitr::include_graphics("https://eddelbuettel.github.io/tint/tintPdfLatoPage1.png", dpi = NA)
+if (connected) knitr::include_graphics(latofile, dpi = NA)
 ```
 
 ```yaml
@@ -166,7 +158,7 @@ latexfonts:
 ```
 
 ```{r fig-garamond-screenshot, fig.margin=TRUE, cache=TRUE, echo=FALSE}
-knitr::include_graphics("https://eddelbuettel.github.io/tint/tintPdfGaramondPage1.png", dpi = NA)
+if (connected) knitr::include_graphics(garamondfile, dpi = NA)
 ```
 
 This requires the fonts to be installed on the system on which the document is

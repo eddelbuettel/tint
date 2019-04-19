@@ -1,3 +1,11 @@
+## Imported from the tufte package by Yihui Xie and JJ Allaire
+## to avoid an explicit dependency for the somewhat optional
+## html usage (as the package is principally a pdf processor to us)
+##
+## Copyright Yihui Xie, JJ Allaire et al
+## Licensed as GPL-3
+## https://cran.r-project.org/package=tufte
+
 #' @details \code{newthought()} can be used in inline R expressions in R
 #'   Markdown (e.g. \samp{`r newthought(Some text)`}), and it works for both
 #'   HTML (\samp{<span class="newthought">text</span>}) and PDF
@@ -49,6 +57,8 @@ quote_footer = function(text) {
 #' @details \code{sans_serif()} applies sans-serif fonts to \code{text}.
 #' @rdname tintHtml
 sans_serif = function(text) {
+    .Deprecated(msg=paste("Function 'sans_serif' not applicable for package 'tint'.",
+                          "It may be removed in a future release."))
   if (is_html_output()) {
     sprintf('<span class="sans">%s</span>', text)
   } else if (is_latex_output()) {
@@ -62,10 +72,6 @@ sans_serif = function(text) {
 template_resources = function(name, ...) {
   system.file('rmarkdown', 'templates', name, 'resources', ..., package = 'tint')
 }
-
-# import two helper functions from knitr
-is_html_output = function(...) knitr:::is_html_output(...)
-is_latex_output = function(...) knitr:::is_latex_output(...)
 
 gsub_fixed = function(...) gsub(..., fixed = TRUE)
 

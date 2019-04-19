@@ -1,3 +1,10 @@
+## Imported from the knitr package by Yihui Xie et al as 'copies'
+## because R dislikes accessing non-exported helper functions, and
+## two or three functions here are not exported directly by knitr
+##
+## Copyright Yihui Xie et al
+## Licensed as GPL (>= 2)
+## https://cran.r-project.org/package=knitr
 
 # excludes can be a vector of 'markdown', 'epub', etc
 is_html_output <- function(fmt = pandoc_to(), excludes = NULL) {

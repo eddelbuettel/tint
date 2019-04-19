@@ -32,13 +32,12 @@ quote_footer(text)
 sans_serif(text)
 }
 \arguments{
-\item{...}{Other arguments to be passed to \code{\link{pdf_document}} or
- \code{\link{html_document}} 
- 
- 
-\strong{Note:} For \code{tintPdf} and \code{tintBook}, you can 
-specify a custom \code{template} argument to replace the default. 
-You \emph{cannot} use the \code{theme} argument in \code{tintHHtml()} 
+\item{...}{Other arguments to be passed to
+\code{\link{pdf_document}} or \code{\link{html_document}}
+
+\strong{Note:} For \code{tintPdf} and \code{tintBook}, you can
+specify a custom \code{template} argument to replace the default.
+You \emph{cannot} use the \code{theme} argument in \code{tintHHtml()}
 because this argument has been set internally.}
 
 \item{fig_width}{Default width (in inches) for figures}
@@ -67,17 +66,21 @@ or \code{biblatex}. Use \code{none} if neither package is to be used.}
 the page width is too narrow (by default it is a circled plus sign)}
 }
 \description{
-A template for creating html reports according to the style of Edward R. Tufte and
-Richard Feynman, but with an updated font choice.
+A template for creating html reports according to the style of
+Edward R. Tufte and Richard Feynman, but with an updated font
+choice. The three key functions \code{tintHtml}, \code{tintPdf}
+and \code{tintBook} offer, respectively, support for html and
+pdf-based shorter (\dQuote{article-length} writeups as well as
+support for longer pdf-based content.
 }
 \details{
 \code{tintHtml} provides the HTML format based on the Tufte CSS
   \url{https://edwardtufte.github.io/tufte-css/} with fonts set according to
-\url{https://github.com/nogginfuel/envisioned-css}. 
-\code{tintPdf} provides a similar PDF format using the same font family and 
-styling applied to the Tufte-LaTeX 
-\url{https://tufte-latex.github.io/tufte-latex/} class. 
-\code{tintBook} is a (currently rather experimental) pdf book variant.
+\url{https://github.com/nogginfuel/envisioned-css}.
+\code{tintPdf} provides a similar PDF format using the same font family and
+styling applied to the Tufte-LaTeX
+\url{https://tufte-latex.github.io/tufte-latex/} class.
+\code{tintBook} is a (still somewhat experimental) pdf book variant.
 
 \code{newthought()} can be used in inline R expressions in R
   Markdown (e.g. \samp{`r newthought(Some text)`}), and it works for both
@@ -93,12 +96,11 @@ styling applied to the Tufte-LaTeX
 
 \code{sans_serif()} applies sans-serif fonts to \code{text}.
 }
-\examples{
-library(tint)
-
-}
 \references{
-See \url{http://rstudio.github.io/tufte} for an example.
+See \url{http://rstudio.github.io/tufte} for the
+\pkg{tufte} package this was initially derived from. See
+\url{http://eddelbuettel.github.io/tint} for usage examples
+from this package.
 }
 \seealso{
 \link{Custom-templates}, \link{YAML-metadata}.

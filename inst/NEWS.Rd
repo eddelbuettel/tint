@@ -3,6 +3,15 @@
 \newcommand{\ghpr}{\href{https://github.com/eddelbuettel/tint/pull/#1}{##1}}
 \newcommand{\ghit}{\href{https://github.com/eddelbuettel/tint/issues/#1}{##1}}
 
+\section{Changes in tint version 0.1.2 (2019-04-xx)}{
+  \itemize{
+    \item Two new shorter html and pdf vignettes have been added (with
+    references to the longer vignettes) reducing package size.
+    \item New helper function 'theme_tint' based on a similar function
+    in package 'ggtufte'.
+  }
+}
+    
 \section{Changes in tint version 0.1.1 (2019-03-30)}{
   \itemize{
     \item The two pdf styles have been extended allowing more flexible
