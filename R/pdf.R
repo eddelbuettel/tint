@@ -204,7 +204,7 @@ tintPdfCreate <- function(documentclass = c('tufte-handout', 'tufte-book'),
     if (is.null(knitr_options$knit_hooks)) knitr_options$knit_hooks = list()
 
     ## set options
-    knitr_options$opts_chunk$tidy = TRUE
+    knitr_options$opts_chunk$tidy = FALSE   ## TRUE implied formatR use
     knitr_options$opts_knit$width = 45
 
     ## set hooks for special plot output

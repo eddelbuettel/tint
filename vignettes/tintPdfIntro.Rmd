@@ -17,11 +17,14 @@ vignette: >
 library(tint)
 library(ggplot2)
 mtcars$am <- factor(mtcars$am, labels=c("manual", "automatic"))
-## download files if connected
-connected <- tint:::.isConnected()
+## download files if connected -- and we're not on Windows as this consistently failed
+## when not connected (or on Windows), two margin figure will not be shown, the rest
+## is still processed as usual
+connected <- tint:::.isConnected() && .Platform$OS.type != "windows"
 if (connected) {
-    latofile <- file.path(tempdir(), "tintPdfLatoPage1.pdf")
-    garamondfile <- file.path(tempdir(), "tintPdfGaramondPage1.pdf")
+    tmpdir <- normalizePath(tempdir(), winslash = "/")
+    latofile <- file.path(tmpdir, "tintPdfLatoPage1.pdf")
+    garamondfile <- file.path(tmpdir, "tintPdfGaramondPage1.pdf")
     download.file("https://eddelbuettel.github.io/tint/tintPdfLatoPage1.pdf",
                   latofile, quiet = TRUE)
     download.file("https://eddelbuettel.github.io/tint/tintPdfGaramondPage1.pdf",

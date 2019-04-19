@@ -1,3 +1,13 @@
+2019-04-19  Dirk Eddelbuettel  <edd@debian.org>
+
+	* R/pdf.R (tintPdfCreate): Revert remaining 'tidy' chunk option to
+	FALSE to not have a spurious dependency on the formatR package
+
+	* vignettes/tintHtmlIntro.Rmd: Refined download of two png images used
+	for two margin figure to better cope with the delight that is Windows
+	* vignettes/tintPdfIntro.Rmd: Idem, but also turn download off if on
+	Windows and we could get this work for pdf vignettes on win-builder
+
 2019-04-18  Dirk Eddelbuettel  <edd@debian.org>
 
 	* DESCRIPTION (Version, Date): Roll minor version

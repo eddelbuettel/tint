@@ -17,10 +17,13 @@ library(tint)
 library(ggplot2)
 mtcars$am <- factor(mtcars$am, labels=c("manual", "automatic"))
 ## download files if connected
+## when not connected, two margin figure will not be shown, the rest
+## is still processed as usual
 connected <- tint:::.isConnected()
 if (connected) {
-    latofile <- file.path(tempdir(), "tintPdfLatoPage1.png")
-    garamondfile <- file.path(tempdir(), "tintPdfGaramondPage1.png")
+    tmpdir <- normalizePath(tempdir(), winslash = "/")
+    latofile <- file.path(tmpdir, "tintPdfLatoPage1.png")
+    garamondfile <- file.path(tmpdir, "tintPdfGaramondPage1.png")
     download.file("https://eddelbuettel.github.io/tint/tintPdfLatoPage1.png",
                   latofile, quiet = TRUE)
     download.file("https://eddelbuettel.github.io/tint/tintPdfGaramondPage1.png",
