@@ -125,7 +125,16 @@ texlive-latex-recommended
 texlive-pictures
 ```
 
-### Author
+### See Also
+
+- [binb](https://github.com/eddelbuettel/binb): Binb is not Beamer: Stylish pdf Presentations from RMarkdown
+- [linl](https://github.com/eddelbuettel/linl): Linl is not Letter: LaTeX letters from RMarkdown
+- [pinp](https://github.com/eddelbuettel/pinp): Pinp is not PNAS: Snazzy one-or two column short papers or vignettes 
+
+and the [minm](https://github.com/eddelbuettel/minm) package installing all of them.
+
+
+### Authors
 
 Dirk Eddelbuettel and Jonathan Gilligan, borrowing heavily from JJ and Yihui in
 [tufte](https://cran.r-project.org/package=tufte), Dave Liepman in the underlying
