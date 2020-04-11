@@ -1,6 +1,11 @@
-## tint [![Build Status](https://travis-ci.org/eddelbuettel/tint.svg)](https://travis-ci.org/eddelbuettel/tint) [![Package-License](http://img.shields.io/badge/license-GPL--3-brightgreen.svg?style=flat)](http://www.gnu.org/licenses/gpl-3.0.html) [![CRAN](https://www.r-pkg.org/badges/version/tint)](https://cran.r-project.org/package=tint) [![Dependencies](https://tinyverse.netlify.com/badge/tint)](https://cran.r-project.org/package=tint) [![Downloads](http://cranlogs.r-pkg.org/badges/tint?color=brightgreen)](http://www.r-pkg.org/pkg/tint)
+## tint: Tint is not Tufte
 
-Tint is not Tufte
+[![Build Status](https://travis-ci.org/eddelbuettel/tint.svg)](https://travis-ci.org/eddelbuettel/tint) 
+[![Package-License](http://img.shields.io/badge/license-GPL--3-brightgreen.svg?style=flat)](http://www.gnu.org/licenses/gpl-3.0.html) 
+[![CRAN](https://www.r-pkg.org/badges/version/tint)](https://cran.r-project.org/package=tint) 
+[![Dependencies](https://tinyverse.netlify.com/badge/tint)](https://cran.r-project.org/package=tint) 
+[![Downloads](http://cranlogs.r-pkg.org/badges/tint?color=brightgreen)](http://www.r-pkg.org/pkg/tint)
+[![Last Commit](https://img.shields.io/github/last-commit/eddelbuettel/tint)](https://github.com/eddelbuettel/tint)
 
 ### Motivation
 
