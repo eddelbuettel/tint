@@ -1,0 +1,23 @@
+---
+title: "Writing an academic paper in R"
+author: "Author"
+date: "Date"
+bibliography: tintBibDemo.bib
+link-citations: yes
+output: tint::tintPdf
+toc: yes
+---
+
+# Introduction
+
+`@Meyer2000` results in @Meyer2000. 
+
+`@Meyer2000 [p. 328]` results in @Meyer2000 [p. 328]
+
+`[@Meyer2000]` results in [@Meyer2000]
+
+`[-@Meyer2000]` results in [-@Meyer2000]
+
+# Summary
+
+# References
