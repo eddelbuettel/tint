@@ -1,3 +1,9 @@
+2020-07-13  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version, Date): Roll minor version
+
+	* R/html.R (parse_footnotes): Updated from tufte upstream
+
 2020-05-02  Dirk Eddelbuettel  <edd@debian.org>
 
 	* inst/examples/tintBibDemo.Rmd: Add simple demo based on
