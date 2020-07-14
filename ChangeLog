@@ -1,3 +1,10 @@
+2020-07-14  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version, Date): Roll minor version
+
+	* R/html.R (tintHtml): More small updates from tufte
+	* R/utils.R (pandoc2): One-line helper function 
+
 2020-07-13  Dirk Eddelbuettel  <edd@debian.org>
 
 	* DESCRIPTION (Version, Date): Roll minor version
