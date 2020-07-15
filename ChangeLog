@@ -3,6 +3,8 @@
 	* R/html.R (tintHtml): Also update margin_references()
 	* vignettes/tintHtmlIntro.Rmd: Update citation examples
 
+	* cleanup: Paid tribute the overlord of checkbashism
+
 2020-07-14  Dirk Eddelbuettel  <edd@debian.org>
 
 	* DESCRIPTION (Version, Date): Roll minor version
