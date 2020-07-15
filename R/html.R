@@ -46,6 +46,7 @@ tintHtml <- function(...) {
     )
   }
   format = html_document2(theme = NULL, ...)
+  pandoc2 = pandoc2.0()
 
   # when fig.margin = TRUE, set fig.beforecode = TRUE so plots are moved before
   # code blocks, and they can be top-aligned
@@ -64,13 +65,14 @@ tintHtml <- function(...) {
     knitr::opts_hooks$restore(ohooks)
 
     x = readUTF8(output)
-    footnotes = parse_footnotes(x)
+    fn_label = paste0(knitr::opts_knit$get('rmarkdown.pandoc.id_prefix'), 'fn')
+    footnotes = parse_footnotes(x, fn_label)
     notes = footnotes$items
     # replace footnotes with sidenotes
     for (i in seq_along(notes)) {
       num = sprintf(
-        '<a href="#fn%d" class="footnoteRef" id="fnref%d"><sup>%d</sup></a>',
-        i, i, i
+        '<a href="#%s%d" class="%s" id="%sref%d"><sup>%d</sup></a>',
+        fn_label, i, if (pandoc2) 'footnote-ref' else 'footnoteRef', fn_label, i, i
       )
       con = sprintf(paste0(
         '<label for="tufte-sn-%d" class="margin-toggle sidenote-number">%d</label>',
