@@ -1,3 +1,8 @@
+2020-07-15  Dirk Eddelbuettel  <edd@debian.org>
+
+	* R/html.R (tintHtml): Also update margin_references()
+	* vignettes/tintHtmlIntro.Rmd: Update citation examples
+
 2020-07-14  Dirk Eddelbuettel  <edd@debian.org>
 
 	* DESCRIPTION (Version, Date): Roll minor version

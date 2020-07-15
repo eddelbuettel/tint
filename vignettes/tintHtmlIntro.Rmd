@@ -3,6 +3,7 @@ title: "Tint Is Not Tufte: Brief Intro"
 author: "Dirk Eddelbuettel and Jonathan Gilligan"
 date: "`r Sys.Date()`"
 output: tint::tintHtml
+bibliography: tint.bib
 link-citations: yes
 
 vignette: >
@@ -34,9 +35,9 @@ if (connected) {
 
 # An Introduction to `tint`
 
-[tint](http://github.com/eddelbuettel/tint) \citep{cran:tint} updates the look and feel of
+[tint](http://github.com/eddelbuettel/tint) [@cran:tint] updates the look and feel of
 'Tufte' documents for R. It combines the (html and pdf parts of the) excellent
-[tufte](https://github.com/rstudio/tufte) package \citep{cran:tufte} with the [Roboto
+[tufte](https://github.com/rstudio/tufte) package [@cran:tufte] with the [Roboto
 Condensed](https://fonts.google.com/specimen/Roboto+Condensed) font use and color scheme
 proposed by [envisioned css](https://github.com/nogginfuel/envisioned-css) plus minor
 style changes such as removal of _italics_---but remains otherwise true to the
@@ -99,7 +100,7 @@ ggplot(mtcars, aes(wt, mpg)) + geom_point(size=3, aes(colour=factor(cyl))) +
 
 Charts can also take advantage of the `theme_tint()` we added; it owes a lot to a similar
 function in the [ggtufte](https://github.com/jrnold/ggtufte) package
-\citep{github:ggtufte} (but which conflicts in its font settings with our, so we
+[@github:ggtufte] (but which conflicts in its font settings with our, so we
 simplified). Its effect can be seen in the second figure. Note that the legend-suppression
 has to come after `theme_tint()` as changes are additive.
 
@@ -173,8 +174,8 @@ and font-specific help.
 ## Citations
 
 One can use Pandoc-style citations using the the Bibtext citation identifier inside of
-square brackets: `[@someone:1984]`. Alternatively, the standard `natbib` features are
-available such as `\citet{}`, `\citep{}` and more.
+square brackets: `[@someone:1984]`. In pdf mode, the standard `natbib` features are
+also available such as `\citet{}`, `\citep{}` and more.
 
 ## Code
 
@@ -185,7 +186,7 @@ font declarations (using YAML formatting).
 ## Tables
 
 As [knitr](https://github.com/yihui/knitr)
-\citep{cran:knitr} is driving the conversion, many of its options also apply.  See the
+[@cran:knitr] is driving the conversion, many of its options also apply.  See the
 documentation for the [tufte](https://github.com/rstudio/tufte) and
 [knitr](https://github.com/yihui/knitr) for details.
 
