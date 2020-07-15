@@ -213,8 +213,10 @@ parse_footnotes = function(x, fn_label='fn') {
 
 # move reference items from the bottom to the margin (as margin notes)
 margin_references = function(x) {
-  i = which(x == '<div id="refs" class="references">')
+  i = grep('^<div id="refs" class="references[^"]*">$', x)
   if (length(i) != 1) return(x)
+  # link-citations: no
+  if (length(grep('<a href="#ref-[^"]+"[^>]*>([^<]+)</a>', x)) == 0) return(x)
   r = '^<div id="(ref-[^"]+)">$'
   k = grep(r, x)
   k = k[k > i]
@@ -223,9 +225,9 @@ margin_references = function(x) {
   # pandoc-citeproc may generate a link on both the year and the alphabetic
   # suffix, e.g. <a href="#cite-key">2016</a><a href="#cite-key">a</a>; we need
   # to merge the two links
-  x = gsub('(<a href="#[^"]+">)([^<]+)</a>\\1([^<]+)</a>', '\\1\\2\\3</a>', x)
+  x = gsub('(<a href="#[^"]+"[^>]*>)([^<]+)</a>\\1([^<]+)</a>', '\\1\\2\\3</a>', x)
   ids = gsub(r, '\\1', x[k])
-  ids = sprintf('<a href="#%s">([^<]+)</a>', ids)
+  ids = sprintf('<a href="#%s"[^>]*>([^<]+)</a>', ids)
   ref = gsub('^<p>|</p>$', '', x[k + 1])
   # replace 3 em-dashes with author names
   dashes = paste0('^', intToUtf8(rep(8212, 3)), '[.]')
