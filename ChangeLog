@@ -1,3 +1,7 @@
+2020-07-18  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version, Date): Release 0.1.3
+
 2020-07-15  Dirk Eddelbuettel  <edd@debian.org>
 
 	* R/html.R (tintHtml): Also update margin_references()
@@ -10,7 +14,7 @@
 	* DESCRIPTION (Version, Date): Roll minor version
 
 	* R/html.R (tintHtml): More small updates from tufte
-	* R/utils.R (pandoc2): One-line helper function 
+	* R/utils.R (pandoc2): One-line helper function
 
 2020-07-13  Dirk Eddelbuettel  <edd@debian.org>
 

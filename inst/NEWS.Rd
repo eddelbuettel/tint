@@ -3,6 +3,18 @@
 \newcommand{\ghpr}{\href{https://github.com/eddelbuettel/tint/pull/#1}{##1}}
 \newcommand{\ghit}{\href{https://github.com/eddelbuettel/tint/issues/#1}{##1}}
 
+\section{Changes in tint version 0.1.3 (2020-07-18)}{
+  \itemize{
+    \item A new minimal demo was added showing inline references (Dirk
+    addressing \ghit{42}).
+    \item Code for margin notes and reference in html mode was updated
+    with thanks to \pkg{tufte} (Dirk in \ghpr{43} and \ghpr{44}
+    addressing \ghit{40}).
+    \item The README.md was updated with a new 'See Also' section and a
+    new badge.
+  }
+}
+
 \section{Changes in tint version 0.1.2 (2019-04-19)}{
   \itemize{
     \item Two new shorter html and pdf vignettes have been added (with
@@ -11,7 +23,7 @@
     in package 'ggtufte'.
   }
 }
-    
+
 \section{Changes in tint version 0.1.1 (2019-03-30)}{
   \itemize{
     \item The two pdf styles have been extended allowing more flexible
