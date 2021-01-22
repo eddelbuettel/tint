@@ -1,6 +1,7 @@
 ## tint: Tint is not Tufte
 
 [![Build Status](https://travis-ci.org/eddelbuettel/tint.svg)](https://travis-ci.org/eddelbuettel/tint) 
+[![CI](https://github.com/eddelbuettel/tint/workflows/ci/badge.svg)](https://github.com/eddelbuettel/tint/actions?query=workflow%3Aci)
 [![Package-License](http://img.shields.io/badge/license-GPL--3-brightgreen.svg?style=flat)](http://www.gnu.org/licenses/gpl-3.0.html) 
 [![CRAN](https://www.r-pkg.org/badges/version/tint)](https://cran.r-project.org/package=tint) 
 [![Dependencies](https://tinyverse.netlify.com/badge/tint)](https://cran.r-project.org/package=tint) 
