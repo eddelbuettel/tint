@@ -3,6 +3,14 @@
 \newcommand{\ghpr}{\href{https://github.com/eddelbuettel/tint/pull/#1}{##1}}
 \newcommand{\ghit}{\href{https://github.com/eddelbuettel/tint/issues/#1}{##1}}
 
+\section{Changes in tint version 0.1.4 (2021-xx-yy)}{
+  \itemize{
+    \item Added continuous integration at GitHub using \code{run.sh} 
+    \item Non-margin reference in html mode now have an improved display
+    (David Selby and Dirk in \ghpr{47})
+  }
+}
+
 \section{Changes in tint version 0.1.3 (2020-07-18)}{
   \itemize{
     \item A new minimal demo was added showing inline references (Dirk

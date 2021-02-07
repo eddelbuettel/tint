@@ -1,3 +1,13 @@
+2021-02-07  Dirk Eddelbuettel  <edd@debian.org>
+
+	* inst/rmarkdown/templates/tintHtml/resources/tint.css:
+	Further tweaking of values for improved references
+
+2021-02-05  David Selby  <qurk.kinschien@gmail.com>
+
+	* inst/rmarkdown/templates/tintHtml/resources/tint.css:
+	Improve styling for explicit (non-margin) references
+
 2021-01-21  Dirk Eddelbuettel  <edd@debian.org>
 
         * .github/workflows/ci.yaml: Add CI runner using r-ci
