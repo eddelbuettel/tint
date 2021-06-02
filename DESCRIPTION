@@ -10,7 +10,7 @@ Description: A 'tufte'-alike style for 'rmarkdown'.
  building on the 'tufte' package with additional contributions
  from the 'knitr' and 'ggtufte' package, and also acknowledging
  the key influence of 'envisioned css'.
-URL: https://github.com/eddelbuettel/tint/, http://dirk.eddelbuettel.com/code/tint.html
+URL: https://github.com/eddelbuettel/tint/, https://dirk.eddelbuettel.com/code/tint.html
 BugReports: https://github.com/eddelbuettel/tint/issues
 Imports: htmltools, knitr, rmarkdown
 Suggests: ggplot2
