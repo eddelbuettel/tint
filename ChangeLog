@@ -1,3 +1,7 @@
+2021-06-02  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (URL): Add repo to URL
+
 2021-02-21  Dirk Eddelbuettel  <edd@debian.org>
 
 	* DESCRIPTION (Version, Date): Roll minor version
