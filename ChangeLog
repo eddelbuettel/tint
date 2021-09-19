@@ -1,3 +1,7 @@
+2021-09-19  Dirk Eddelbuettel  <edd@debian.org>
+
+	* README.md: Add link to sidenotes overview
+
 2021-06-02  Dirk Eddelbuettel  <edd@debian.org>
 
 	* DESCRIPTION (URL): Add repo to URL

@@ -133,12 +133,17 @@ texlive-pictures
 
 ### See Also
 
+#### Other RMarkdown Packages
+
 - [binb](https://github.com/eddelbuettel/binb): Binb is not Beamer: Stylish pdf Presentations from RMarkdown
 - [linl](https://github.com/eddelbuettel/linl): Linl is not Letter: LaTeX letters from RMarkdown
 - [pinp](https://github.com/eddelbuettel/pinp): Pinp is not PNAS: Snazzy one-or two column short papers or vignettes 
 
 and the [minm](https://github.com/eddelbuettel/minm) package installing all of them.
 
+#### Sidenotes
+
+[Gwern Branwen](https://www.gwern.net/index) has a wide-ranging overview of [sidenotes in web design](https://www.gwern.net/Sidenotes).
 
 ### Authors
 
