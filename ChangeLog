@@ -2,6 +2,8 @@
 
 	* .github/workflows/ci.yaml (jobs): Update to actions/checkout@v3
 
+	* tests/simple.R: Condition test on sufficient pandoc version
+
 2022-01-09  Dirk Eddelbuettel  <edd@debian.org>
 
 	* README.md: Remove unused continuous integration artifact and badge
