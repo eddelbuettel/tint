@@ -3,11 +3,16 @@
 \newcommand{\ghpr}{\href{https://github.com/eddelbuettel/tint/pull/#1}{##1}}
 \newcommand{\ghit}{\href{https://github.com/eddelbuettel/tint/issues/#1}{##1}}
 
-\section{Changes in tint version 0.1.4 (2021-xx-yy)}{
+\section{Changes in tint version 0.1.4 (2022-11-01)}{
   \itemize{
     \item Added continuous integration at GitHub using \code{run.sh} 
     \item Non-margin reference in html mode now have an improved display
     (David Selby and Dirk in \ghpr{47})
+    \item The LaTeX package \code{array} is now installed for improved
+    table support (Dirk addressing \ghit{48})
+    \item Minor updates made the package directory and README.md 
+    \item GitHub Actions were updated to checkout version 3.
+    \item Several http:// URLs were updated to https://
   }
 }
 

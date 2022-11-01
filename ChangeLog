@@ -1,8 +1,15 @@
 2022-11-01  Dirk Eddelbuettel  <edd@debian.org>
 
+	* DESCRIPTION (Version, Date): Release 0.1.4
+
 	* .github/workflows/ci.yaml (jobs): Update to actions/checkout@v3
 
 	* tests/simple.R: Condition test on sufficient pandoc version
+
+	* README.md: Update several http:// URLs to https://
+	* vignettes/tintHtmlIntro.Rmd (vignette): Idem
+	* vignettes/tintPdfIntro.Rmd (vignette): Idem
+	* man/tintHtml.Rd: Idem
 
 2022-01-09  Dirk Eddelbuettel  <edd@debian.org>
 
