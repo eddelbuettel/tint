@@ -35,7 +35,7 @@ if (connected) {
 
 # An Introduction to `tint`
 
-[tint](http://github.com/eddelbuettel/tint) [@cran:tint] updates the look and feel of
+[tint](https://github.com/eddelbuettel/tint) [@cran:tint] updates the look and feel of
 'Tufte' documents for R. It combines the (html and pdf parts of the) excellent
 [tufte](https://github.com/rstudio/tufte) package [@cran:tufte] with the [Roboto
 Condensed](https://fonts.google.com/specimen/Roboto+Condensed) font use and color scheme
@@ -81,7 +81,7 @@ Notes can also be added in-line using an R command and the `margin_note()` funct
 
 # Margin Figures
 
-One feature of the [tint](http://github.com/eddelbuettel/tint) /
+One feature of the [tint](https://github.com/eddelbuettel/tint) /
 [tufte](https://github.com/rstudio/tufte) packages are margin figure such as the first one
 on the right. It was created by setting the `knitr` option `fig.margin=TRUE`; the plotting
 code itself is standard.

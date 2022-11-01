@@ -97,9 +97,9 @@ styling applied to the Tufte-LaTeX
 \code{sans_serif()} applies sans-serif fonts to \code{text}.
 }
 \references{
-See \url{http://rstudio.github.io/tufte} for the
+See \url{https://rstudio.github.io/tufte/} for the
 \pkg{tufte} package this was initially derived from. See
-\url{http://eddelbuettel.github.io/tint} for usage examples
+\url{https://eddelbuettel.github.io/tint/} for usage examples
 from this package.
 }
 \seealso{

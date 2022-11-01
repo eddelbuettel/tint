@@ -1,10 +1,10 @@
 ## tint: Tint is not Tufte
 
 [![CI](https://github.com/eddelbuettel/tint/workflows/ci/badge.svg)](https://github.com/eddelbuettel/tint/actions?query=workflow%3Aci)
-[![Package-License](http://img.shields.io/badge/license-GPL--3-brightgreen.svg?style=flat)](http://www.gnu.org/licenses/gpl-3.0.html) 
+[![Package-License](https://img.shields.io/badge/license-GPL--3-brightgreen.svg?style=flat)](https://www.gnu.org/licenses/gpl-3.0.html) 
 [![CRAN](https://www.r-pkg.org/badges/version/tint)](https://cran.r-project.org/package=tint) 
 [![Dependencies](https://tinyverse.netlify.com/badge/tint)](https://cran.r-project.org/package=tint) 
-[![Downloads](http://cranlogs.r-pkg.org/badges/tint?color=brightgreen)](http://www.r-pkg.org/pkg/tint)
+[![Downloads](https://cranlogs.r-pkg.org/badges/tint?color=brightgreen)](https://www.r-pkg.org/pkg/tint)
 [![Last Commit](https://img.shields.io/github/last-commit/eddelbuettel/tint)](https://github.com/eddelbuettel/tint)
 
 ### Motivation
@@ -22,7 +22,7 @@ for a while for an alternative, and came across
 very right: use of the beautiful 
 [Roboto Condensed font](https://fonts.google.com/specimen/Roboto+Condensed) along with
 a closer-to-white background.  So I _mixed_ this with the code framework provided by JJ and Yihui to
-make it an [RMarkdown](http://rmarkdown.rstudio.com/) template you can use just by installing this
+make it an [RMarkdown](https://rmarkdown.rstudio.com/) template you can use just by installing this
 package. Among the small changes I made were the removal of _italics_ in subheaders and the title.
 
 Similarly, LaTeX styles exists and the
@@ -37,9 +37,9 @@ output only, and added support for a pdf book format in release 0.1.0.
 
 A quick screenshot of the html variant is below:
 
-![](http://eddelbuettel.github.com/tint/tintHtmlScreenshot.png)
+![](https://eddelbuettel.github.io/tint/tintHtmlScreenshot.png)
 
-and the full underlying document is [available too](http://eddelbuettel.github.com/tint/).  Its sources 
+and the full underlying document is [available too](https://eddelbuettel.github.io/tint/).  Its sources 
 are included in the packages as
 [html/skeleton.Rmd](https://github.com/eddelbuettel/tint/blob/master/inst/rmarkdown/templates/tintHtml/skeleton/skeleton.Rmd).
 
@@ -47,14 +47,14 @@ are included in the packages as
 
 Another screenshot shows the pdf handout variant:
 
-![](http://eddelbuettel.github.com/tint/tintPdfScreenshot.png)
+![](https://eddelbuettel.github.com/tint/tintPdfScreenshot.png)
 
 and its underlying sources are included as 
 [pdf/skeleton.Rmd](https://github.com/eddelbuettel/tint/blob/master/inst/rmarkdown/templates/tintPdf/skeleton/skeleton.Rmd).
 
 Here is a screenshot of the book format (which was added with release 0.1.0), showing a chapter-opening page on the left:
 
-![](http://eddelbuettel.github.com/tint/tintBookScreenshot.png)
+![](https://eddelbuettel.github.io/tint/tintBookScreenshot.png)
 
 #### PDF Font Variants
 
@@ -73,7 +73,7 @@ latexfonts:
 
 yields output as in the following screenshot of the first two vignette pages:
 
-![](http://eddelbuettel.github.com/tint/tintPDFGaramond.png)
+![](https://eddelbuettel.github.io/tint/tintPDFGaramond.png)
 
 A second example is using 
 
@@ -87,7 +87,7 @@ linkcolor: "0.3,0.3,0.6"
 
 which also show the `linkcolor` option resulting in
 
-![](http://eddelbuettel.github.com/tint/tintPDFLato.png)
+![](https://eddelbuettel.github.io/tint/tintPDFLato.png)
 
 
 ### Status
