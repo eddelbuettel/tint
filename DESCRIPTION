@@ -3,8 +3,10 @@ Type: Package
 Title: 'tint' is not 'Tufte'
 Version: 0.1.4
 Date: 2022-11-01
-Author: Dirk Eddelbuettel and Jonathan Gilligan
-Maintainer: Dirk Eddelbuettel <edd@debian.org>
+Authors@R: c(person("Dirk", "Eddelbuettel", role = c("aut", "cre"), email = "edd@debian.org",
+                    comment = c(ORCID = "0000-0001-6419-907X")),
+             person("Jonathan", "Gilligan", role = "ctb",
+                    comment = c(ORCID = "0000-0003-1375-6686")))
 Description: A 'tufte'-alike style for 'rmarkdown'.
  A modern take on the 'Tufte' design for pdf and html vignettes,
  building on the 'tufte' package with additional contributions
