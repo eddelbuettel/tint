@@ -1,3 +1,11 @@
+2025-03-27  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version, Date): Release 0.1.5
+
+	* R/html.R: Add missing \link anchor, URL update
+	* man/tintHtml.Rd: Regenerated
+	* README.md: URL update
+
 2024-11-20  Dirk Eddelbuettel  <edd@debian.org>
 
 	* DESCRIPTION (Authors@R): Added

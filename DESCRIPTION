@@ -1,8 +1,8 @@
 Package: tint
 Type: Package
 Title: 'tint' is not 'Tufte'
-Version: 0.1.4
-Date: 2022-11-01
+Version: 0.1.5
+Date: 2025-03-27
 Authors@R: c(person("Dirk", "Eddelbuettel", role = c("aut", "cre"), email = "edd@debian.org",
                     comment = c(ORCID = "0000-0001-6419-907X")),
              person("Jonathan", "Gilligan", role = "ctb",
@@ -18,5 +18,5 @@ Imports: htmltools, knitr, rmarkdown
 Suggests: ggplot2
 VignetteBuilder: knitr
 License: GPL-3
-RoxygenNote: 6.1.1
+RoxygenNote: 6.0.1
 Encoding: UTF-8

@@ -3,6 +3,14 @@
 \newcommand{\ghpr}{\href{https://github.com/eddelbuettel/tint/pull/#1}{##1}}
 \newcommand{\ghit}{\href{https://github.com/eddelbuettel/tint/issues/#1}{##1}}
 
+\section{Changes in tint version 0.1.5 (2025-03-27)}{
+  \itemize{
+    \item Standard package maintenance for continuous integration, URL
+    updates, and packaging conventions
+    \item Correct two minor nags in the Rd file
+  }
+}
+
 \section{Changes in tint version 0.1.4 (2022-11-01)}{
   \itemize{
     \item Added continuous integration at GitHub using \code{run.sh} 
