@@ -15,12 +15,12 @@ tintHtml(...)
 
 tint(...)
 
-tintPdf(fig_width = 4, fig_height = 2.5, fig_crop = TRUE,
-  dev = "pdf", highlight = "tango", citation_package = "natbib",
+tintPdf(fig_width = 4, fig_height = 2.5, fig_crop = TRUE, dev = "pdf",
+  highlight = "tango", citation_package = "natbib",
   latex_engine = "pdflatex", ...)
 
-tintBook(fig_width = 4, fig_height = 2.5, fig_crop = TRUE,
-  dev = "pdf", highlight = "tango", citation_package = "natbib",
+tintBook(fig_width = 4, fig_height = 2.5, fig_crop = TRUE, dev = "pdf",
+  highlight = "tango", citation_package = "natbib",
   latex_engine = "pdflatex", ...)
 
 newthought(text)
@@ -33,7 +33,7 @@ sans_serif(text)
 }
 \arguments{
 \item{...}{Other arguments to be passed to
-\code{\link{pdf_document}} or \code{\link{html_document}}
+\code{\link[rmarkdown]{pdf_document}} or \code{\link[rmarkdown]{html_document}}
 
 \strong{Note:} For \code{tintPdf} and \code{tintBook}, you can
 specify a custom \code{template} argument to replace the default.
@@ -44,20 +44,33 @@ because this argument has been set internally.}
 
 \item{fig_height}{Default height (in inches) for figures}
 
-\item{fig_crop}{\code{TRUE} to automatically apply the \code{pdfcrop} utility
-(if available) to pdf figures}
+\item{fig_crop}{Whether to crop PDF figures with the command
+\command{pdfcrop}. This requires the tools \command{pdfcrop} and
+\command{ghostscript} to be installed. By default, \code{fig_crop = TRUE}
+if these two tools are available.}
 
 \item{dev}{Graphics device to use for figure output (defaults to pdf)}
 
-\item{highlight}{Syntax highlighting style. Supported styles include
-"default", "tango", "pygments", "kate", "monochrome", "espresso",
-"zenburn", and "haddock". Pass \code{NULL} to prevent syntax highlighting.}
+\item{highlight}{Syntax highlighting style passed to Pandoc.
+
+ Supported built-in styles include "default", "tango", "pygments", "kate",
+ "monochrome", "espresso", "zenburn", "haddock", and "breezedark".
+
+  Two custom styles are also included, "arrow", an accessible color scheme,
+  and "rstudio", which mimics the default IDE theme. Alternatively, supply a
+  path to a \samp{.theme} file to use
+  \href{https://pandoc.org/MANUAL.html#syntax-highlighting}{a custom Pandoc
+  style}. Note that custom theme requires Pandoc 2.0+.
+
+  Pass \code{NULL} to prevent syntax highlighting.}
 
 \item{citation_package}{The LaTeX package to process citations, \code{natbib}
-or \code{biblatex}. Use \code{none} if neither package is to be used.}
+or \code{biblatex}. Use \code{default} if neither package is to be used,
+which means citations will be processed via the command
+\command{pandoc-citeproc}.}
 
 \item{latex_engine}{LaTeX engine for producing PDF output. Options are
-"pdflatex", "lualatex", and "xelatex".}
+"pdflatex", "lualatex", "xelatex" and "tectonic".}
 
 \item{text}{A character string to be presented as a \dQuote{new thought}
 (using small caps), or a margin note, or a footer of a quote}

@@ -17,7 +17,7 @@
 #' support for longer pdf-based content.
 #'
 #' @param ... Other arguments to be passed to
-#' \code{\link{pdf_document}} or \code{\link{html_document}}
+#' \code{\link[rmarkdown]{pdf_document}} or \code{\link[rmarkdown]{html_document}}
 #'
 #' \strong{Note:} For \code{tintPdf} and \code{tintBook}, you can
 #' specify a custom \code{template} argument to replace the default.
@@ -32,9 +32,9 @@
 #' \url{https://tufte-latex.github.io/tufte-latex/} class.
 #' \code{tintBook} is a (still somewhat experimental) pdf book variant.
 #'
-#' @references See \url{http://rstudio.github.io/tufte} for the
+#' @references See \url{https://rstudio.github.io/tufte/} for the
 #' \pkg{tufte} package this was initially derived from. See
-#' \url{http://eddelbuettel.github.io/tint} for usage examples
+#' \url{https://eddelbuettel.github.io/tint/} for usage examples
 #' from this package.
 #' @seealso \link{Custom-templates}, \link{YAML-metadata}.
 tintHtml <- function(...) {
