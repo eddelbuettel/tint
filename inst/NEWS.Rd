@@ -3,6 +3,13 @@
 \newcommand{\ghpr}{\href{https://github.com/eddelbuettel/tint/pull/#1}{##1}}
 \newcommand{\ghit}{\href{https://github.com/eddelbuettel/tint/issues/#1}{##1}}
 
+\section{Changes in tint version 0.1.6 (2025-09-25)}{
+  \itemize{
+    \item An additional LaTeX command needed by \pkg{pandoc} (>= 3.2.1) has
+    been defined for the two pdf variants.
+  }
+}
+
 \section{Changes in tint version 0.1.5 (2025-03-27)}{
   \itemize{
     \item Standard package maintenance for continuous integration, URL
