@@ -1,3 +1,10 @@
+2025-09-25  Dirk Eddelbuettel  <edd@debian.org>
+
+	* inst/rmarkdown/templates/tintPdf/resources/tintPdf-template.tex:
+	Define `pandocunbounded` needed by pandoc (>= 3.2.1)
+	* inst/rmarkdown/templates/tintBook/resources/tintBook-template.tex:
+	Idem
+
 2025-03-27  Dirk Eddelbuettel  <edd@debian.org>
 
 	* DESCRIPTION (Version, Date): Release 0.1.5
