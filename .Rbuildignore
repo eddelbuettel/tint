@@ -4,3 +4,5 @@
 ^.*\.tar\.gz$
 ^local
 ^\.github
+^inst/rmarkdown/templates/tintBook/resources/auto
+^inst/rmarkdown/templates/tintPdf/resources/auto
